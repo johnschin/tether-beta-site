@@ -1,65 +1,156 @@
-import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main className="min-h-screen bg-white text-slate-900">
+      <section className="border-b border-slate-200">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="max-w-4xl">
+            <div className="mb-4 inline-flex rounded-full border border-slate-200 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-600">
+              Private beta for employers
+            </div>
+
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
+              Support employees through AI anxiety, burnout, and workplace change.
+            </h1>
+
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
+              Tether is a confidential resilience coach for employees navigating
+              unstable work. It helps people process what they are carrying,
+              regain steadiness, and adapt more effectively through AI rollout,
+              layoffs, overload, and trust erosion.
+            </p>
+
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/#beta"
+                className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+              >
+                Request Beta Access
+              </Link>
+              <Link
+                href="/how-it-works"
+                className="inline-flex rounded-2xl border border-slate-300 px-6 py-4 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+              >
+                See How It Works
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              Core pages
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
+              Explore the site.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              We are building this cleanly and one page at a time. The important
+              pieces are already live locally.
+            </p>
+          </div>
+
+          <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            <Link
+              href="/how-it-works"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+              <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+                How It Works
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                The psychology and frameworks behind Tether.
+              </p>
+            </Link>
+
+            <Link
+              href="/for-employers"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
             >
-              Learning
-            </a>{" "}
-            center.
+              <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+                For Employers
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                The business case and where Tether fits.
+              </p>
+            </Link>
+
+            <Link
+              href="/privacy"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
+            >
+              <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+                Privacy & Trust
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Confidentiality, boundaries, and aggregated reporting.
+              </p>
+            </Link>
+
+            <Link
+              href="/faq"
+              className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
+            >
+              <h3 className="text-xl font-semibold tracking-tight text-slate-950">
+                FAQ
+              </h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Clear answers to the obvious questions.
+              </p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section id="beta" className="mx-auto max-w-4xl px-6 py-20">
+        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+            Beta access
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
+            Interested in piloting Tether at your firm?
+          </h2>
+          <p className="mt-5 text-lg leading-8 text-slate-600">
+            We are inviting a small group of forward-thinking firms to help
+            shape the beta.
+          </p>
+
+          <form className="mt-10 grid gap-4 md:grid-cols-2">
+            <input
+              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
+              placeholder="Your name"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            <input
+              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
+              placeholder="Work email"
+            />
+            <input
+              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
+              placeholder="Company"
+            />
+            <input
+              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
+              placeholder="Role"
+            />
+            <textarea
+              className="min-h-[140px] rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400 md:col-span-2"
+              placeholder="What workplace challenges are most urgent for your team right now?"
+            />
+            <div className="md:col-span-2">
+              <button
+                type="button"
+                className="rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+              >
+                Request Beta Access
+              </button>
+            </div>
+          </form>
         </div>
-      </main>
-    </div>
+      </section>
+    </main>
   );
 }

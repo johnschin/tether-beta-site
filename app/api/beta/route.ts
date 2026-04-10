@@ -6,24 +6,40 @@ function isValidEmail(email: string) {
 
 export async function POST(request: Request) {
   try {
-    const apiKey = process.env.RESEND_API_KEY;
-
+    const apiKey = process.env.RESEND_TETHER_API_KEY;
+    const betaToEmail = process.env.BETA_TO_EMAIL || "info@tetheredconsulting.com";
+    console.log("Using Resend key prefix:", apiKey?.slice(0, 6));
+console.log("Sending to:", betaToEmail);
     if (!apiKey) {
-      console.error("Missing RESEND_API_KEY");
       return Response.json(
         { error: "Email service is not configured." },
         { status: 500 }
       );
     }
 
-    const resend = new Resend(apiKey);
-    const body = await request.json();
+    const contentType = request.headers.get("content-type") || "";
 
-    const name = String(body?.name ?? "").trim();
-    const email = String(body?.email ?? "").trim();
-    const company = String(body?.company ?? "").trim();
-    const role = String(body?.role ?? "").trim();
-    const message = String(body?.message ?? "").trim();
+    let name = "";
+    let email = "";
+    let company = "";
+    let role = "";
+    let message = "";
+
+    if (contentType.includes("application/json")) {
+      const body = await request.json();
+      name = String(body?.name ?? "").trim();
+      email = String(body?.email ?? "").trim().toLowerCase();
+      company = String(body?.company ?? "").trim();
+      role = String(body?.role ?? "").trim();
+      message = String(body?.message ?? "").trim();
+    } else {
+      const formData = await request.formData();
+      name = String(formData.get("name") ?? "").trim();
+      email = String(formData.get("email") ?? "").trim().toLowerCase();
+      company = String(formData.get("company") ?? "").trim();
+      role = String(formData.get("role") ?? "").trim();
+      message = String(formData.get("message") ?? "").trim();
+    }
 
     if (!name || !email) {
       return Response.json(
@@ -39,9 +55,11 @@ export async function POST(request: Request) {
       );
     }
 
+    const resend = new Resend(apiKey);
+
     const { data, error } = await resend.emails.send({
-      from: "Tether Beta <Info@TetheredConsulting.com>",
-      to: ["Info@TetheredConsulting.com"],
+     from: "Tether Beta <info@tetheredconsulting.com>",
+    to: [betaToEmail],
       replyTo: email,
       subject: `New Tether beta signup from ${name}`,
       text: [
@@ -60,7 +78,10 @@ export async function POST(request: Request) {
     if (error) {
       console.error("Resend error:", error);
       return Response.json(
-        { error: "Failed to send beta request email." },
+        {
+          error: "Failed to send beta request email.",
+          details: error,
+        },
         { status: 500 }
       );
     }
@@ -76,7 +97,10 @@ export async function POST(request: Request) {
   } catch (error) {
     console.error("Beta route error:", error);
     return Response.json(
-      { error: "Server error processing beta form." },
+      {
+        error: "Server error processing beta form.",
+        details: error instanceof Error ? error.message : String(error),
+      },
       { status: 500 }
     );
   }

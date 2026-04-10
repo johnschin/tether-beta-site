@@ -1,6 +1,44 @@
+"use client";
+
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { FormEvent, useState } from "react";
 
 export default function BetaPage() {
+  const router = useRouter();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage("");
+
+    const form = event.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("/api/beta", {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setErrorMessage(result?.error || "Something went wrong. Please try again.");
+        setIsSubmitting(false);
+        return;
+      }
+
+      form.reset();
+      router.push("/beta/thanks");
+    } catch (error) {
+      setErrorMessage("Something went wrong. Please try again.");
+      setIsSubmitting(false);
+    }
+  }
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
@@ -17,7 +55,7 @@ export default function BetaPage() {
             Get early access and help shape a calmer, smarter way to support employees through change.
           </p>
 
-          <form action="/api/beta" method="POST" className="mt-10 space-y-6">
+          <form onSubmit={handleSubmit} className="mt-10 space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-slate-900">
                 Name
@@ -80,12 +118,19 @@ export default function BetaPage() {
               />
             </div>
 
-            <div className="flex gap-4">
+            {errorMessage ? (
+              <div className="rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+                {errorMessage}
+              </div>
+            ) : null}
+
+            <div className="flex flex-wrap gap-4">
               <button
                 type="submit"
-                className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+                disabled={isSubmitting}
+                className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90 disabled:cursor-not-allowed disabled:opacity-60"
               >
-                Request beta access
+                {isSubmitting ? "Submitting..." : "Request beta access"}
               </button>
 
               <Link

@@ -20,7 +20,7 @@ export default function ForEmployersPage() {
         </div>
 
         <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
-          Support working parents before stress becomes turnover.
+          Support your employees before stress becomes turnover.
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">

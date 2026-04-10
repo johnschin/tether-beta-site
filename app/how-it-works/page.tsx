@@ -40,7 +40,7 @@ export default function HowItWorksPage() {
       subtitle:
         "People stay engaged longer when struggle is framed as part of learning, not proof of inadequacy.",
       body:
-        "During AI adoption, many employees quietly conclude, I am not built for this. Tether helps reframe the learning dip as normal and gives employees smaller, achievable next reps.",
+        "During AI adoption, many employees quietly conclude, I am not built for this. Tether helps reframe the learning dip as normal and gives employees smaller, achievable next steps.",
       tether:
         "That increases persistence without sounding like a motivational poster taped to a burning building.",
     },

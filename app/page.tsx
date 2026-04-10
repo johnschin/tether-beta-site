@@ -11,7 +11,8 @@ export default function HomePage() {
             </div>
 
             <h1 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
-              Support employees through AI anxiety, burnout, and workplace change.
+              Support employees through AI anxiety, burnout, and workplace
+              change.
             </h1>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
@@ -23,11 +24,12 @@ export default function HomePage() {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <Link
-            href="/beta"
+                href="/beta"
                 className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
               >
                 Request Beta Access
               </Link>
+
               <Link
                 href="/how-it-works"
                 className="inline-flex rounded-2xl border border-slate-300 px-6 py-4 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
@@ -49,9 +51,7 @@ export default function HomePage() {
               Explore the site.
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-600">
-              We are building this cleanly and one page at a time. The important
-              pieces are already live locally.
-            </p>
+              </p>
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -111,44 +111,24 @@ export default function HomePage() {
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
             Beta access
           </p>
+
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
             Interested in piloting Tether at your firm?
           </h2>
+
           <p className="mt-5 text-lg leading-8 text-slate-600">
             We are inviting a small group of forward-thinking firms to help
             shape the beta.
           </p>
 
-          <form className="mt-10 grid gap-4 md:grid-cols-2">
-            <input
-              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
-              placeholder="Your name"
-            />
-            <input
-              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
-              placeholder="Work email"
-            />
-            <input
-              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
-              placeholder="Company"
-            />
-            <input
-              className="rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400"
-              placeholder="Role"
-            />
-            <textarea
-              className="min-h-[140px] rounded-2xl border border-slate-300 bg-white px-5 py-4 text-sm outline-none placeholder:text-slate-400 md:col-span-2"
-              placeholder="What workplace challenges are most urgent for your team right now?"
-            />
-            <div className="md:col-span-2">
-              <button
-                type="button"
-                className="rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
-              >
-                Request Beta Access
-              </button>
-            </div>
-          </form>
+          <div className="mt-10">
+            <Link
+              href="/beta"
+              className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+            >
+              Request Beta Access
+            </Link>
+          </div>
         </div>
       </section>
     </main>

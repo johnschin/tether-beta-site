@@ -1,22 +1,40 @@
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+function isValidEmail(email: string) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
 export async function POST(request: Request) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+
+    if (!apiKey) {
+      console.error("Missing RESEND_API_KEY");
+      return Response.json(
+        { error: "Email service is not configured." },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(apiKey);
     const body = await request.json();
 
-    const {
-      name = "",
-      email = "",
-      company = "",
-      role = "",
-      message = "",
-    } = body ?? {};
+    const name = String(body?.name ?? "").trim();
+    const email = String(body?.email ?? "").trim();
+    const company = String(body?.company ?? "").trim();
+    const role = String(body?.role ?? "").trim();
+    const message = String(body?.message ?? "").trim();
 
     if (!name || !email) {
       return Response.json(
         { error: "Name and email are required." },
+        { status: 400 }
+      );
+    }
+
+    if (!isValidEmail(email)) {
+      return Response.json(
+        { error: "Please enter a valid email address." },
         { status: 400 }
       );
     }
@@ -26,28 +44,35 @@ export async function POST(request: Request) {
       to: ["Info@TetheredConsulting.com"],
       replyTo: email,
       subject: `New Tether beta signup from ${name}`,
-      text: `
-New beta submission
-
-Name: ${name}
-Email: ${email}
-Company: ${company}
-Role: ${role}
-
-Message:
-${message}
-      `.trim(),
+      text: [
+        "New Tether beta submission",
+        "",
+        `Name: ${name}`,
+        `Email: ${email}`,
+        `Company: ${company || "Not provided"}`,
+        `Role: ${role || "Not provided"}`,
+        "",
+        "Message:",
+        message || "Not provided",
+      ].join("\n"),
     });
 
     if (error) {
       console.error("Resend error:", error);
       return Response.json(
-        { error: "Failed to send email." },
+        { error: "Failed to send beta request email." },
         { status: 500 }
       );
     }
 
-    return Response.json({ ok: true, data });
+    return Response.json(
+      {
+        ok: true,
+        message: "Beta request submitted successfully.",
+        data,
+      },
+      { status: 200 }
+    );
   } catch (error) {
     console.error("Beta route error:", error);
     return Response.json(

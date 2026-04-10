@@ -3,87 +3,97 @@ import Link from "next/link";
 export default function ForEmployersPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
-      <section className="mx-auto max-w-4xl px-6 py-16 md:px-8 md:py-24">
-        <div className="mb-8">
-          <Link
-            href="/"
-            className="text-sm font-medium text-slate-600 underline-offset-4 hover:text-slate-900 hover:underline"
-          >
-            ← Back to home
-          </Link>
-        </div>
+      <section className="border-b border-slate-200">
+        <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
+          <div className="max-w-4xl">
+            <div className="mb-4 inline-flex rounded-full border border-slate-200 px-3 py-1 text-xs font-medium uppercase tracking-[0.18em] text-slate-600">
+              For employers
+            </div>
 
-        <div className="mb-10">
-          <span className="inline-flex rounded-full border border-slate-200 px-3 py-1 text-sm font-medium text-slate-700">
-            For Employers
-          </span>
-        </div>
+            <h1 className="text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
+              Support people through uncertainty without adding more load to managers.
+            </h1>
 
-        <h1 className="max-w-3xl text-4xl font-semibold tracking-tight text-slate-900 md:text-5xl">
-          Support your employees before stress becomes turnover.
-        </h1>
-
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600">
-          Tether helps employers support new and expecting parents with practical,
-          human guidance during one of the most vulnerable transitions in adult life.
-          The result is better support, stronger retention, and fewer employees trying
-          to hold everything together with coffee and denial.
-        </p>
-
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 p-6">
-            <h2 className="text-lg font-semibold text-slate-900">Reduce stress</h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              Give employees timely support during pregnancy, postpartum, and early
-              parenthood so they feel less overwhelmed and more steady.
+            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 md:text-xl">
+              Tether gives employees a private, structured space to process workplace stress,
+              anxiety, overload, and change while giving employers a thoughtful, human-centered
+              support layer.
             </p>
-          </div>
 
-          <div className="rounded-2xl border border-slate-200 p-6">
-            <h2 className="text-lg font-semibold text-slate-900">Improve retention</h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              When employees feel supported in real life, they are more likely to stay
-              engaged, loyal, and connected to the organization.
-            </p>
-          </div>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Link
+                href="/beta"
+                className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+              >
+                Join the Beta
+              </Link>
 
-          <div className="rounded-2xl border border-slate-200 p-6">
-            <h2 className="text-lg font-semibold text-slate-900">Strengthen culture</h2>
-            <p className="mt-3 text-sm leading-7 text-slate-600">
-              Show that your company cares about people, not just output, by supporting
-              families through one of the biggest life transitions they will face.
-            </p>
+              <Link
+                href="/how-it-works"
+                className="inline-flex rounded-2xl border border-slate-300 px-6 py-4 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+              >
+                See How It Works
+              </Link>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div className="mt-14 rounded-3xl bg-slate-50 p-8 ring-1 ring-slate-200">
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-            What Tether offers employers
+      <section className="border-b border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-16">
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-950">
+                Reduce hidden strain
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Give employees a place to work through burnout, uncertainty, and pressure before
+                stress turns into disengagement, conflict, or attrition.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-950">
+                Support change more effectively
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Tether helps people navigate AI rollout, restructuring, layoffs, and trust erosion
+                with more steadiness and less isolation.
+              </p>
+            </div>
+
+            <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h2 className="text-xl font-semibold tracking-tight text-slate-950">
+                Add support without adding manager burden
+              </h2>
+              <p className="mt-3 text-sm leading-7 text-slate-600">
+                Not every employee concern belongs on a manager&apos;s desk. Tether offers a
+                private first stop that can help people regulate, reflect, and prepare for better
+                conversations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-5xl px-6 py-20">
+        <div className="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm md:p-12">
+          <h2 className="text-3xl font-semibold tracking-tight text-slate-950">
+            Interested in piloting Tether?
           </h2>
-          <ul className="mt-6 space-y-4 text-slate-600">
-            <li>Personalized support for new and expecting parents</li>
-            <li>Practical guidance employees can use in real time</li>
-            <li>A modern benefit that supports wellbeing and retention</li>
-            <li>A simple way to help families feel less alone</li>
-          </ul>
-        </div>
 
-        <div className="mt-14 rounded-3xl border border-slate-200 p-8">
-          <h2 className="text-2xl font-semibold tracking-tight text-slate-900">
-            Interested in bringing Tether to your team?
-          </h2>
-          <p className="mt-4 max-w-2xl text-slate-600">
-            We are currently exploring early partnerships with employers who want to
-            support working families in a more thoughtful, practical way.
+          <p className="mt-5 max-w-3xl text-lg leading-8 text-slate-600">
+            We are looking for a small group of forward-thinking employers who want to shape the
+            beta and explore how Tether can support resilience during workplace disruption.
           </p>
 
           <div className="mt-8">
-        <Link
-  href="/beta"
-  className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
->
-  Join the beta
-</Link>
+            <Link
+              href="/beta"
+              className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
+            >
+              Request Beta Access
+            </Link>
           </div>
         </div>
       </section>

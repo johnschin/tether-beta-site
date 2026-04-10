@@ -78,12 +78,12 @@ export default function ForEmployersPage() {
           </p>
 
           <div className="mt-8">
-            <Link
-              href="/#beta"
-              className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
-            >
-              Join the beta
-            </Link>
+        <Link
+  href="/beta"
+  className="inline-flex items-center rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
+>
+  Join the beta
+</Link>
           </div>
         </div>
       </section>

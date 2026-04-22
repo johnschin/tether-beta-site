@@ -242,6 +242,35 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
+   <section className="mx-auto max-w-6xl px-6 py-20">
+        <div className="grid gap-10 md:grid-cols-2">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              For managers
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+              Lead change where it actually happens.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              Most change management programs train leaders once and hope the message sticks. Tether works differently — meeting managers in the moment and helping them show up more effectively at every stage of change, not just during the launch.
+            </p>
+          </div>
+          <div className="space-y-5 text-sm leading-7 text-slate-600">
+            <p>
+              Tether guides managers to recognize where each employee sits in the change journey using the ADKAR framework — and respond with the right conversation at the right time. An employee who doesn&apos;t yet understand <em>why</em> the change is happening needs a completely different conversation than someone who gets it but isn&apos;t sure they can execute. Not a script. A sharper read of the room.
+            </p>
+            <p>
+              Many managers are quietly carrying their own anxieties about AI adoption — worried about relevance, unsure how to stay credible when tools are evolving faster than training. Tether gives them a confidential space to work through those fears, build their own footing, and lead from a steadier place. You can&apos;t calm a team&apos;s nervous system if yours is running hot.
+            </p>
+            <p>
+              Over time, Tether functions as ongoing leadership development — strengthening emotional regulation, communication under pressure, and trust-building during uncertainty. The skills that don&apos;t show up in compliance training.
+            </p>
+            <p>
+              What makes Tether uniquely effective is what most training programs can&apos;t offer: continuity. Tether remembers each manager&apos;s journey and uses that context to reinforce growth through frequent, personalized touchpoints. New insights don&apos;t fade after a workshop. They get revisited, built on, and translated into action over time. That&apos;s how lasting behavior change actually happens.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

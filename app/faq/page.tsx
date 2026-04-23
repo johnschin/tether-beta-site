@@ -38,7 +38,7 @@ const faqItems = [
   {
     question: "What does the employer actually get?",
     answer:
-      "Employers get a modern support benefit for employees plus aggregated signals about where change may be getting stuck, including emotional friction across the ADKAR journey.",
+      "Employers get a modern support benefit for employees. Aggregated signals about where change may be getting stuck, including emotional friction across the ADKAR journey. Four hour-long trainings for employees, managers and leaders on critical topics to improve psychological safety during a time of intense corporate change.",
   },
   {
     question: "Why join the beta?",

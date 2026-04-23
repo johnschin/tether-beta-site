@@ -1,9 +1,54 @@
+import type { Metadata } from "next";
 import "./globals.css";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Tether",
-  description: "Confidential resilience coaching for employees in changing workplaces.",
+export const metadata: Metadata = {
+  metadataBase: new URL("https://tetheredconsulting.com"),
+  title: {
+    template: "%s | Tether",
+    default: "Tether — AI Resilience Coaching for Organizational Change",
+  },
+  description:
+    "Tether is a confidential AI resilience coach that helps employees navigate AI rollout, layoffs, restructuring, and workplace change. Built for forward-thinking employers.",
+  keywords: [
+    "employee resilience coaching",
+    "organizational change management",
+    "AI anxiety workplace",
+    "change management coaching",
+    "workplace stress management",
+    "employee burnout support",
+    "AI rollout support",
+    "psychological safety",
+    "ADKAR coaching",
+    "resilience training employees",
+  ],
+  authors: [{ name: "Dr. John Schinnerer" }, { name: "Joree Rose, LMFT" }],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://tetheredconsulting.com",
+    siteName: "Tether",
+    title: "Tether — AI Resilience Coaching for Organizational Change",
+    description:
+      "Confidential AI resilience coaching that helps employees navigate AI rollout, layoffs, restructuring, and workplace change.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tether — AI Resilience Coaching for Organizational Change",
+    description:
+      "Confidential AI resilience coaching that helps employees navigate AI rollout, layoffs, restructuring, and workplace change.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +68,7 @@ export default function RootLayout({
               Tether
             </Link>
 
-            <nav className="hidden items-center gap-2 lg:flex">
+            <nav className="hidden items-center gap-2 lg:flex" aria-label="Main navigation">
               <Link
                 href="/how-it-works"
                 className="rounded-2xl px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
@@ -40,7 +85,7 @@ export default function RootLayout({
                 href="/privacy"
                 className="rounded-2xl px-4 py-2 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900"
               >
-                Privacy & Trust
+                Privacy &amp; Trust
               </Link>
               <Link
                 href="/faq"
@@ -51,7 +96,7 @@ export default function RootLayout({
             </nav>
 
             <Link
-              href="/#beta"
+              href="/beta"
               className="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
             >
               Join the Beta

@@ -1,3 +1,18 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "How Tether Works | The Psychology of Resilience During Change",
+  description:
+    "Tether is built on ADKAR, Self-Determination Theory, Psychological Safety, and growth mindset research. Learn the evidence-based psychology behind how Tether helps employees adapt.",
+  alternates: { canonical: "https://tetheredconsulting.com/how-it-works" },
+  openGraph: {
+    url: "https://tetheredconsulting.com/how-it-works",
+    title: "How Tether Works | The Psychology of Resilience During Change",
+    description:
+      "The evidence-based psychology behind Tether — ADKAR, Self-Determination Theory, Psychological Safety, and more.",
+  },
+};
+
 export default function HowItWorksPage() {
   const theoryCards = [
     {
@@ -71,11 +86,11 @@ export default function HowItWorksPage() {
   ];
 
   const theorySources = [
-    "Deci and Ryan; Gagne et al. - Self-Determination Theory and workplace motivation",
-    "Amy Edmondson - Psychological Safety and learning behavior in teams",
-    "Todd Kashdan et al. - Workplace curiosity and adaptability",
-    "Prosci / Hiatt - ADKAR change model",
-    "Carol Dweck - Growth mindset in learning and performance",
+    "Deci and Ryan; Gagne et al. — Self-Determination Theory and workplace motivation",
+    "Amy Edmondson — Psychological Safety and learning behavior in teams",
+    "Todd Kashdan et al. — Workplace curiosity and adaptability",
+    "Prosci / Hiatt — ADKAR change model",
+    "Carol Dweck — Growth mindset in learning and performance",
     "2024 research on threat appraisal, job vulnerability, and digital transformation resistance",
     "2025 survey data on participation, training, and technology adoption barriers",
   ];
@@ -242,7 +257,8 @@ export default function HowItWorksPage() {
           </div>
         </div>
       </section>
-   <section className="mx-auto max-w-6xl px-6 py-20">
+
+      <section className="mx-auto max-w-6xl px-6 py-20">
         <div className="grid gap-10 md:grid-cols-2">
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
@@ -257,16 +273,16 @@ export default function HowItWorksPage() {
           </div>
           <div className="space-y-5 text-sm leading-7 text-slate-600">
             <p>
-              Tether guides managers to recognize where each employee sits in the change journey using the ADKAR framework — and respond with the right conversation at the right time. An employee who doesn&apos;t yet understand <em>why</em> the change is happening needs a completely different conversation than someone who gets it but isn&apos;t sure they can execute. Not a script. A sharper read of the room.
+              Tether guides managers to recognize where each employee sits in the change journey using the ADKAR framework — and respond with the right conversation at the right time. Not a script. A sharper read of the room.
             </p>
             <p>
-              Many managers are quietly carrying their own anxieties about AI adoption — worried about relevance, unsure how to stay credible when tools are evolving faster than training. Tether gives them a confidential space to work through those fears, build their own footing, and lead from a steadier place. You can&apos;t calm a team&apos;s nervous system if yours is running hot.
+              Many managers are quietly carrying their own anxieties about AI adoption — worried about relevance, unsure how to stay credible when tools are evolving faster than training. Tether gives them a confidential space to work through those fears, build their own footing, and lead from a steadier place.
             </p>
             <p>
-              Over time, Tether functions as ongoing leadership development — strengthening emotional regulation, communication under pressure, and trust-building during uncertainty. The skills that don&apos;t show up in compliance training.
+              Over time, Tether functions as ongoing leadership development — strengthening emotional regulation, communication under pressure, and trust-building during uncertainty.
             </p>
             <p>
-              What makes Tether uniquely effective is what most training programs can&apos;t offer: continuity. Tether remembers each manager&apos;s journey and uses that context to reinforce growth through frequent, personalized touchpoints. New insights don&apos;t fade after a workshop. They get revisited, built on, and translated into action over time. That&apos;s how lasting behavior change actually happens.
+              What makes Tether uniquely effective is continuity. Tether remembers each manager&apos;s journey and uses that context to reinforce growth through frequent, personalized touchpoints. New insights don&apos;t fade after a workshop. They get revisited, built on, and translated into action over time.
             </p>
           </div>
         </div>

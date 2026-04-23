@@ -1,26 +1,36 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Privacy & Trust | Tether",
+  description:
+    "Tether is built around employee confidentiality. Employers see aggregated trends, never individual conversations. Learn how Tether protects employee privacy during organizational change.",
+  alternates: { canonical: "https://tetheredconsulting.com/privacy" },
+  openGraph: {
+    url: "https://tetheredconsulting.com/privacy",
+    title: "Privacy & Trust | Tether",
+    description:
+      "Employers see aggregated trends, never individual conversations. Tether is built for support, not surveillance.",
+  },
+};
 
 export default function PrivacyPage() {
   const privacyPrinciples = [
     {
       title: "Employees keep confidentiality",
-      body:
-        "Tether is designed so employees can speak candidly without HR visibility into individual conversations.",
+      body: "Tether is designed so employees can speak candidly without HR visibility into individual conversations.",
     },
     {
       title: "HR sees trends, not transcripts",
-      body:
-        "Organizations receive aggregated signals about themes and change friction. They do not get employee-by-employee reporting or raw conversation logs.",
+      body: "Organizations receive aggregated signals about themes and change friction. They do not get employee-by-employee reporting or raw conversation logs.",
     },
     {
       title: "Built for support, not surveillance",
-      body:
-        "The product is meant to help employees navigate hard conditions, not to monitor sentiment or flag private vulnerability for management review.",
+      body: "The product is meant to help employees navigate hard conditions, not to monitor sentiment or flag private vulnerability for management review.",
     },
     {
       title: "Clear boundaries",
-      body:
-        "Tether is a coaching tool, not therapy, not an EAP hotline, and not a performance management system wearing a fake mustache.",
+      body: "Tether is a coaching tool, not therapy, not an EAP hotline, and not a performance management system wearing a fake mustache.",
     },
   ];
 
@@ -52,9 +62,7 @@ export default function PrivacyPage() {
               <h2 className="text-xl font-semibold tracking-tight text-slate-950">
                 {item.title}
               </h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                {item.body}
-              </p>
+              <p className="mt-4 text-sm leading-7 text-slate-600">{item.body}</p>
             </div>
           ))}
         </div>

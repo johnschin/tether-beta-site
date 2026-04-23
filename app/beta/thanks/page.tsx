@@ -1,4 +1,11 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Request Received | Tether",
+  description: "Your Tether beta request has been received.",
+  robots: { index: false, follow: false },
+};
 
 export default function BetaThanksPage() {
   return (
@@ -10,11 +17,11 @@ export default function BetaThanksPage() {
           </p>
 
           <h1 className="mt-5 text-4xl font-semibold tracking-tight text-slate-950 md:text-6xl">
-            Thanks. You’re on the list.
+            Thanks. You&apos;re on the list.
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-600 md:text-xl">
-            We’ve received your beta request and will be in touch as we open access.
+            We&apos;ve received your beta request and will be in touch as we open access.
           </p>
 
           <div className="mt-10 flex flex-wrap justify-center gap-4">

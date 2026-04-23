@@ -1,8 +1,41 @@
+import type { Metadata } from "next";
 import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "Tether — AI Resilience Coaching for Organizational Change",
+  description:
+    "Tether is a confidential AI resilience coach helping employees navigate AI rollout, layoffs, restructuring, and burnout. Private beta now open for employers.",
+  alternates: { canonical: "https://tetheredconsulting.com" },
+  openGraph: {
+    url: "https://tetheredconsulting.com",
+    title: "Tether — AI Resilience Coaching for Organizational Change",
+    description:
+      "Confidential resilience coaching that helps employees navigate AI rollout, layoffs, restructuring, and burnout without burning out.",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Tether",
+  url: "https://tetheredconsulting.com",
+  description:
+    "Confidential AI resilience coaching for employees navigating organizational change, AI rollout, layoffs, and workplace stress.",
+  founder: [
+    { "@type": "Person", name: "Dr. John Schinnerer", jobTitle: "Ph.D., Psychologist" },
+    { "@type": "Person", name: "Joree Rose", jobTitle: "LMFT" },
+  ],
+  sameAs: [],
+};
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+
       <section className="border-b border-slate-200">
         <div className="mx-auto max-w-6xl px-6 py-20 md:py-28">
           <div className="max-w-4xl">
@@ -45,13 +78,11 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-6 py-16">
           <div className="max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
-              Core pages
+              Explore
             </p>
             <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950">
-              Explore the site.
+              Everything you need to evaluate Tether.
             </h2>
-            <p className="mt-5 text-lg leading-8 text-slate-600">
-              </p>
           </div>
 
           <div className="mt-10 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
@@ -84,7 +115,7 @@ export default function HomePage() {
               className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-0.5"
             >
               <h3 className="text-xl font-semibold tracking-tight text-slate-950">
-                Privacy & Trust
+                Privacy &amp; Trust
               </h3>
               <p className="mt-3 text-sm leading-7 text-slate-600">
                 Confidentiality, boundaries, and aggregated reporting.

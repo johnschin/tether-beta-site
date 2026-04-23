@@ -1,41 +1,73 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 
-export default function FAQPage() {
-  const faqItems = [
-    {
-      question: "Is Tether therapy?",
-      answer:
-        "No. Tether is a non-clinical resilience and change coaching tool. It offers psychologically informed support for workplace stress, uncertainty, burnout, and adaptation. It is not a diagnostic or treatment service.",
-    },
-    {
-      question: "Can employers read individual conversations?",
-      answer:
-        "No. The employer-facing model is based on aggregated insight, not access to individual conversations. That privacy boundary is central to user trust.",
-    },
-    {
-      question: "Who is Tether for inside an organization?",
-      answer:
-        "Tether is especially relevant for HR, People Ops, L&D, transformation leaders, and executives navigating AI rollout, restructuring, burnout, or trust erosion.",
-    },
-    {
-      question: "What kinds of employee issues does Tether help with?",
-      answer:
-        "Common themes include AI anxiety, job insecurity, layoff survivor stress, burnout, change fatigue, difficult managers, loss of motivation, and low psychological safety.",
-    },
-    {
-      question: "What does the employer actually get?",
-      answer:
-        "Employers get a modern support benefit for employees plus aggregated signals about where change may be getting stuck, including emotional friction across the ADKAR journey.",
-    },
-    {
-      question: "Why join the beta?",
-      answer:
-        "The beta gives early partners a chance to shape the product, pressure-test the value in a real environment, and explore a more credible support layer for unstable work.",
-    },
-  ];
+export const metadata: Metadata = {
+  title: "FAQ | Tether Resilience Coaching",
+  description:
+    "Is Tether therapy? Can employers read conversations? What does the employer get? Clear answers to the most common questions about Tether's confidential AI resilience coaching.",
+  alternates: { canonical: "https://tetheredconsulting.com/faq" },
+  openGraph: {
+    url: "https://tetheredconsulting.com/faq",
+    title: "FAQ | Tether Resilience Coaching",
+    description:
+      "Clear answers to the most common questions about Tether — privacy, scope, employer benefits, and how it works.",
+  },
+};
 
+const faqItems = [
+  {
+    question: "Is Tether therapy?",
+    answer:
+      "No. Tether is a non-clinical resilience and change coaching tool. It offers psychologically informed support for workplace stress, uncertainty, burnout, and adaptation. It is not a diagnostic or treatment service.",
+  },
+  {
+    question: "Can employers read individual conversations?",
+    answer:
+      "No. The employer-facing model is based on aggregated insight, not access to individual conversations. That privacy boundary is central to user trust.",
+  },
+  {
+    question: "Who is Tether for inside an organization?",
+    answer:
+      "Tether is especially relevant for HR, People Ops, L&D, transformation leaders, and executives navigating AI rollout, restructuring, burnout, or trust erosion.",
+  },
+  {
+    question: "What kinds of employee issues does Tether help with?",
+    answer:
+      "Common themes include AI anxiety, job insecurity, layoff survivor stress, burnout, change fatigue, difficult managers, loss of motivation, and low psychological safety.",
+  },
+  {
+    question: "What does the employer actually get?",
+    answer:
+      "Employers get a modern support benefit for employees plus aggregated signals about where change may be getting stuck, including emotional friction across the ADKAR journey.",
+  },
+  {
+    question: "Why join the beta?",
+    answer:
+      "The beta gives early partners a chance to shape the product, pressure-test the value in a real environment, and explore a more credible support layer for unstable work.",
+  },
+];
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqItems.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  })),
+};
+
+export default function FAQPage() {
   return (
     <main className="min-h-screen bg-white text-slate-900">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+
       <section className="border-b border-slate-200 bg-slate-50">
         <div className="mx-auto max-w-5xl px-6 py-20">
           <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
@@ -84,10 +116,10 @@ export default function FAQPage() {
           </p>
           <div className="mt-8">
             <Link
-              href="/"
+              href="/beta"
               className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
             >
-              Back to home
+              Request Beta Access
             </Link>
           </div>
         </div>

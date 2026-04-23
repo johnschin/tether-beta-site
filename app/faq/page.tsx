@@ -38,7 +38,12 @@ const faqItems = [
   {
     question: "What does the employer actually get?",
     answer:
-      "Employers get a modern support benefit for employees. Aggregated signals about where change may be getting stuck, including emotional friction across the ADKAR journey. Four hour-long trainings for employees, managers and leaders on critical topics to improve psychological safety during a time of intense corporate change.",
+      "Employers get a cutting-edge, psychologically-informed AI coach available 24/7 for employees. Aggregated, anonymous group-level data about where change may be getting stuck, including emotional friction across the ADKAR journey. Four hour-long trainings for employees, managers, and leaders on critical topics to improve psychological safety during a time of intense corporate change.",
+    list: [
+      "A cutting-edge, psychologically-informed AI coach available 24/7 for employees.",
+      "Aggregated, anonymous group-level data about where change may be getting stuck, including emotional friction across the ADKAR journey.",
+      "Four hour-long trainings for employees, managers, and leaders on critical topics to improve psychological safety during a time of intense corporate change.",
+    ],
   },
   {
     question: "Why join the beta?",
@@ -94,9 +99,17 @@ export default function FAQPage() {
               <h2 className="text-xl font-semibold tracking-tight text-slate-950">
                 {item.question}
               </h2>
-              <p className="mt-4 text-sm leading-7 text-slate-600">
-                {item.answer}
-              </p>
+              {"list" in item && item.list ? (
+                <ul className="mt-4 space-y-2 pl-5 text-sm leading-7 text-slate-600" style={{ listStyleType: "disc" }}>
+                  {item.list.map((point: string) => (
+                    <li key={point}>{point}</li>
+                  ))}
+                </ul>
+              ) : (
+                <p className="mt-4 text-sm leading-7 text-slate-600">
+                  {item.answer}
+                </p>
+              )}
             </div>
           ))}
         </div>

@@ -95,6 +95,32 @@ export default function HowItWorksPage() {
     "2025 survey data on participation, training, and technology adoption barriers",
   ];
 
+  const mindfulnessSessions = [
+    {
+      session: "Session 1",
+      title: "Mindfulness, Emotional Awareness & the Stress Response",
+      body: "Introduction to mindful awareness and the stress response; understanding the difference between reacting and responding; building emotional granularity — moving beyond 'stressed' and 'fine' to identify what is actually happening internally; body-based emotion detection; breathwork practices for immediate regulation.",
+    },
+    {
+      session: "Session 2",
+      title: "Emotional Regulation Tools & Communication During Change",
+      body: "Practical regulation tools for sustained high-demand periods, including grounding techniques, micro-practices for the workday, and progressive muscle relaxation; how emotional state shapes communication; strategies for speaking clearly and constructively when stress is high or conversations feel threatening.",
+    },
+  ];
+
+  const managerSessions = [
+    {
+      session: "Session 1",
+      title: "The Regulated Manager",
+      body: "Understanding the autonomic nervous system in the workplace; how your own regulation state sets the tone for your team; recognizing signs of sympathetic activation in yourself and others; co-regulation basics; why people cannot learn, collaborate, or think creatively when their nervous system perceives threat — and what managers can do about it.",
+    },
+    {
+      session: "Session 2",
+      title: "Communicating Through Change",
+      body: "How overwhelmed employees process information differently; why logical arguments fail during fight-or-flight; the acknowledge-validate-redirect communication framework; creating psychological safety so employees can ask questions and admit difficulty; delivering hard news with honesty and care; managing your own activation during difficult conversations.",
+    },
+  ];
+
   return (
     <main className="min-h-screen bg-white text-slate-900">
       <section className="border-b border-slate-200 bg-slate-50">
@@ -284,6 +310,176 @@ export default function HowItWorksPage() {
             <p>
               What makes Tether uniquely effective is continuity. Tether remembers each manager&apos;s journey and uses that context to reinforce growth through frequent, personalized touchpoints. New insights don&apos;t fade after a workshop. They get revisited, built on, and translated into action over time.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ── LIVE TRAINING ── */}
+      <section className="border-t border-slate-200 bg-slate-50">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+
+          {/* Section header */}
+          <div className="max-w-3xl">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              Live training
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
+              Expert-led programs that make the science actionable.
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-slate-600">
+              Tether&apos;s AI coaching is reinforced by two distinct live programs delivered over the 8-week pilot — each targeting a different layer of the resilience challenge. Together they create a reinforcing system: managers build safer conditions, employees build internal awareness, and the AI coach provides real-time application between sessions.
+            </p>
+          </div>
+
+          {/* Program 1: Mindfulness — Employees */}
+          <div className="mt-14 rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                For employees &middot; 2 sessions
+              </p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                Mindfulness Training
+              </h3>
+              <p className="mt-1 text-sm font-medium text-slate-500">
+                Led by Joree Rose, MA, LMFT
+              </p>
+            </div>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+              Two hour-long group sessions covering four interlocking skills: mindfulness, emotional granularity, emotional regulation, and communication. Employees learn to recognize what they are actually feeling, regulate their stress response before it takes over, and communicate more clearly and constructively during difficult periods of change.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {mindfulnessSessions.map((s) => (
+                <div
+                  key={s.title}
+                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">
+                    {s.session}
+                  </p>
+                  <h4 className="mt-2 text-base font-semibold tracking-tight text-slate-950">
+                    {s.title}
+                  </h4>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{s.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Program 2: Manager Communication — Managers & Leaders */}
+          <div className="mt-6 rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                For managers &amp; leaders &middot; 2 sessions
+              </p>
+              <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950 md:text-3xl">
+                Managerial Communication Training
+              </h3>
+              <p className="mt-1 text-sm font-medium text-slate-500">
+                Led by Dr. John Schinnerer
+              </p>
+            </div>
+            <p className="mt-5 max-w-2xl text-sm leading-7 text-slate-600">
+              Two hour-long sessions on the practical science of leading people through change. Managers learn to recognize nervous system activation in themselves and their teams, communicate in ways that reduce rather than amplify threat, and create the conditions where learning and adaptation can actually happen.
+            </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {managerSessions.map((s) => (
+                <div
+                  key={s.title}
+                  className="rounded-2xl border border-slate-100 bg-slate-50 p-5"
+                >
+                  <p className="text-xs font-semibold uppercase tracking-[0.14em] text-slate-400">
+                    {s.session}
+                  </p>
+                  <h4 className="mt-2 text-base font-semibold tracking-tight text-slate-950">
+                    {s.title}
+                  </h4>
+                  <p className="mt-2 text-sm leading-7 text-slate-600">{s.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Facilitators */}
+          <div className="mt-20">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-500">
+              Your facilitators
+            </p>
+            <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 md:text-4xl">
+              Delivered by practitioners with decades of real-world experience.
+            </h2>
+
+            <div className="mt-10 grid gap-6 md:grid-cols-2">
+              {/* Joree */}
+              <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Mindfulness Training
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">
+                  Joree Rose, MA, LMFT
+                </h3>
+                <p className="mt-1 text-sm font-medium text-slate-500">
+                  Licensed Marriage &amp; Family Therapist · Mindfulness Teacher &amp; Author
+                </p>
+                <p className="mt-5 text-sm leading-7 text-slate-600">
+                  Joree Rose is a licensed marriage and family therapist, mindfulness and meditation teacher, author, and retreat leader. She has helped thousands of people live with greater awareness, emotional resilience, and compassion. Featured in Oprah Magazine, NBCnews.com, and Business Insider. Author of <em>A Year of Gratitude</em>, <em>Squirmy Learns to be Mindful</em>, and <em>Mindfulness, It&apos;s Elementary</em>.
+                </p>
+                <p className="mt-4 text-sm leading-7 text-slate-600">
+                  Her training integrates evidence-based mindfulness, acceptance and commitment therapy, and somatic awareness — delivered with warmth and a grounded practicality built for real workplace situations, not retreats.
+                </p>
+              </div>
+
+              {/* John */}
+              <div className="rounded-[1.75rem] border border-slate-200 bg-white p-8 shadow-sm">
+                <p className="text-xs font-semibold uppercase tracking-[0.18em] text-slate-500">
+                  Managerial Communication Training
+                </p>
+                <h3 className="mt-3 text-2xl font-semibold tracking-tight text-slate-950">
+                  Dr. John Schinnerer
+                </h3>
+                <p className="mt-1 text-sm font-medium text-slate-500">
+                  Ph.D. in Psychology, UC Berkeley · Executive Coach &amp; Speaker
+                </p>
+                <p className="mt-5 text-sm leading-7 text-slate-600">
+                  Dr. Schinnerer is a psychologist, executive coach, and speaker with over 30 years of experience translating complex psychology into tools leaders can use under real pressure. He has coached leaders at Meta, Twilio, Okta, Airbnb, Stanford University, and Bank of America, and served as a behavioral science consultant on Pixar&apos;s <em>Inside Out</em>.
+                </p>
+                <p className="mt-4 text-sm leading-7 text-slate-600">
+                  His training draws on polyvagal theory, CBT, motivational interviewing, and applied neuroscience — warm, direct, and built for leaders who want tools that hold up when the stakes are high.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ── CTA ── */}
+      <section className="bg-slate-900 text-white">
+        <div className="mx-auto max-w-6xl px-6 py-20">
+          <div className="grid gap-10 md:grid-cols-2 md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.18em] text-slate-400">
+                Ready to explore a pilot?
+              </p>
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight md:text-5xl">
+                See what Tether looks like inside your organization.
+              </h2>
+            </div>
+            <div className="space-y-4 text-sm leading-7 text-slate-300">
+              <p>
+                Tether pilots are designed to be low-risk and high-signal — a structured 8-week program that produces measurable data and a clear picture of what resilience support can do at scale in your organization.
+              </p>
+              <p>
+                If your team is navigating reorgs, AI adoption, leadership transitions, or any combination of the above, we&apos;d like to talk.
+              </p>
+              <div className="pt-2">
+                <a
+                  href="/beta"
+                  className="inline-flex rounded-2xl bg-white px-6 py-4 text-sm font-medium text-slate-900 shadow-sm transition hover:opacity-90"
+                >
+                  Request pilot information
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

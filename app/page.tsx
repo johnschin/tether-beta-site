@@ -22,10 +22,48 @@ const organizationSchema = {
   description:
     "Confidential AI resilience coaching for employees navigating organizational change, AI rollout, layoffs, and workplace stress.",
   founder: [
-    { "@type": "Person", name: "Dr. John Schinnerer", jobTitle: "Ph.D., Psychologist" },
-    { "@type": "Person", name: "Joree Rose", jobTitle: "LMFT" },
+    {
+      "@type": "Person",
+      name: "Dr. John Schinnerer",
+      jobTitle: "Psychologist, Executive Coach",
+      description:
+        "Ph.D. in Psychology from UC Berkeley. Expert consultant on Pixar's Inside Out. Speaker at Stanford Medical School, UC Berkeley, Kaiser Permanente. Coached leaders at Meta, Twilio, Okta, Airbnb, Stanford University, Bank of America, and Wells Fargo.",
+      alumniOf: { "@type": "CollegeOrUniversity", name: "University of California, Berkeley" },
+      sameAs: ["https://www.linkedin.com/in/drjohnschinnerer/"],
+    },
+    {
+      "@type": "Person",
+      name: "Joree Rose",
+      jobTitle: "Licensed Marriage and Family Therapist, Mindfulness Teacher",
+      description:
+        "MA, LMFT. Author of A Year of Gratitude, Squirmy Learns to be Mindful, and Mindfulness, It's Elementary. Host of Journey Forward with Joree Rose podcast. Featured in Oprah Magazine, NBC News, and Business Insider.",
+      sameAs: ["https://joreerose.com"],
+    },
   ],
   sameAs: [],
+};
+
+const serviceSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  name: "Tether AI Resilience Coaching",
+  serviceType: "Employee Resilience Coaching",
+  provider: {
+    "@type": "Organization",
+    name: "Tether",
+    url: "https://tetheredconsulting.com",
+  },
+  description:
+    "An always-on AI resilience coach that helps employees navigate organizational change — AI rollouts, restructuring, layoffs, and burnout — through confidential coaching, employee training, and manager development.",
+  audience: {
+    "@type": "Audience",
+    audienceType: "Employers and HR Leaders seeking employee resilience support during organizational change",
+  },
+  offers: {
+    "@type": "Offer",
+    availability: "https://schema.org/LimitedAvailability",
+    description: "Private beta access available for qualifying employers",
+  },
 };
 
 export default function HomePage() {
@@ -34,6 +72,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
 
       <section className="border-b border-slate-200">

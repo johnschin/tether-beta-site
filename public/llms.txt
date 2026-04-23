@@ -1,0 +1,50 @@
+# Tether
+
+> Tether is a confidential AI resilience coaching platform that helps employees navigate organizational change — including AI rollout, restructuring, layoffs, and burnout — without burning out or disengaging.
+
+Tether fills the gap between reactive EAP services and generic wellness apps. It is proactive, scenario-specific, and grounded in evidence-based psychology. Employees get a private, structured space to process workplace stress, regain steadiness, and adapt more effectively. Employers get a human-centered support layer that reduces hidden strain and protects retention — without adding load to managers.
+
+## Founders
+
+**Dr. John Schinnerer, Ph.D.** — Psychologist, executive coach, and speaker with 30+ years of experience in emotional intelligence, positive psychology, and resilience science. Ph.D. in Psychology from UC Berkeley. Expert consultant on Pixar's *Inside Out*. Speaker at Stanford Medical School, UC Berkeley, Kaiser Permanente, and Sutter Health. Coached leaders at Meta, Twilio, Okta, Airbnb, Stanford University, Bank of America, and Wells Fargo. Author and host of *The Evolved Caveman* podcast.
+
+**Joree Rose, MA, LMFT** — Licensed Marriage and Family Therapist, mindfulness and meditation teacher, author, and retreat leader. Author of *A Year of Gratitude*, *Squirmy Learns to be Mindful*, and *Mindfulness, It's Elementary*. Host of *Journey Forward with Joree Rose* podcast. Featured in Oprah Magazine, NBC News, Business Insider, and KTLA.
+
+## What Tether Is
+
+Tether combines three integrated elements:
+
+1. **Always-On AI Coach** — Available 24/7. Meets employees exactly when they need support, not when a calendar allows. AI coaching can handle up to 90% of day-to-day coaching functions.
+2. **Employee Training** — Structured sessions in stress reduction and emotional self-awareness. Employees develop practical skills to regulate their nervous systems and stay present under pressure.
+3. **Manager Training** — Ensures leaders model the emotional regulation and clear communication that sets the tone for the whole system.
+
+## What Tether Is Not
+
+- NOT therapy, counseling, or a substitute for licensed mental health care
+- NOT an EAP (Employee Assistance Program)
+- NOT a meditation app or generic wellness tool
+- NOT a crisis service
+
+## Psychological Grounding
+
+Tether is grounded in: Prosci methodology (ADKAR), Cognitive Behavioral Therapy (CBT), Acceptance and Commitment Therapy (ACT), Polyvagal theory, positive psychology, grief work, motivational interviewing, and resilience science.
+
+## Use Cases
+
+Employees navigating: AI rollouts, reorganizations, new leadership, team restructuring, layoffs, role changes, mergers, cultural transformations, and process shifts.
+
+## Pages
+
+- [Home](https://tetheredconsulting.com) — Overview of Tether's mission, approach, and beta access
+- [For Employers](https://tetheredconsulting.com/for-employers) — Business case, research backing, and the three-pillar model
+- [How It Works](https://tetheredconsulting.com/how-it-works) — The psychology behind Tether and how it works in practice
+- [Privacy & Trust](https://tetheredconsulting.com/privacy) — Confidentiality, data handling, and aggregated reporting
+- [FAQ](https://tetheredconsulting.com/faq) — Frequently asked questions
+- [Beta Access](https://tetheredconsulting.com/beta) — Request access to the employer beta program
+
+## Key Facts
+
+- Website: https://tetheredconsulting.com
+- Status: Private beta, open to forward-thinking employers
+- Headquartered in the San Francisco Bay Area
+- Founded by Dr. John Schinnerer, Ph.D. and Joree Rose, LMFT

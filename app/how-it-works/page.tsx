@@ -137,12 +137,19 @@ export default function HowItWorksPage() {
               people do better with support that protects agency, builds capability,
               restores steadiness, and makes it safer to learn in public.
             </p>
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="/"
                 className="inline-flex rounded-2xl bg-slate-900 px-6 py-4 text-sm font-medium text-white shadow-sm transition hover:opacity-90"
               >
                 Back to home
+              </a>
+
+              <a
+                href="https://tether-ai-coach.netlify.app/trial.html"
+                className="inline-flex rounded-2xl border border-slate-300 px-6 py-4 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+              >
+                Take a test run
               </a>
             </div>
           </div>

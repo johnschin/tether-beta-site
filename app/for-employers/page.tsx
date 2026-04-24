@@ -48,6 +48,13 @@ export default function ForEmployersPage() {
               >
                 See How It Works
               </Link>
+
+              <a
+                href="https://tether-ai-coach.netlify.app/trial.html"
+                className="inline-flex rounded-2xl border border-slate-300 px-6 py-4 text-sm font-medium text-slate-800 transition hover:bg-slate-50"
+              >
+                Take a test run
+              </a>
             </div>
           </div>
         </div>

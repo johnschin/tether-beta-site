@@ -168,7 +168,7 @@ export default function HowItWorksPage() {
             The core insight
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-slate-950 md:text-5xl">
-            Resistance to change is usually not irrational. It is often a signal.
+            Resistance to change is not irrational. It is a signal.
           </h2>
           <p className="mt-5 text-lg leading-8 text-slate-600">
             Employees resist when they feel threatened, underprepared, shut out,

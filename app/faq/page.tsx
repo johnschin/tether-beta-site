@@ -5,12 +5,18 @@ export const metadata: Metadata = {
   title: "FAQ | Tether Resilience Coaching",
   description:
     "Is Tether therapy? Can employers read conversations? What does the employer get? Clear answers to the most common questions about Tether's confidential AI resilience coaching.",
-  alternates: { canonical: "https://tetheredconsulting.com/faq" },
+  alternates: { canonical: "https://www.tetheredconsulting.com/faq" },
   openGraph: {
-    url: "https://tetheredconsulting.com/faq",
+    url: "https://www.tetheredconsulting.com/faq",
     title: "FAQ | Tether Resilience Coaching",
     description:
       "Clear answers to the most common questions about Tether — privacy, scope, employer benefits, and how it works.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FAQ | Tether Resilience Coaching",
+    description:
+      "Is Tether therapy? Can employers read conversations? Clear answers to the most common questions about Tether's AI resilience coaching.",
   },
 };
 

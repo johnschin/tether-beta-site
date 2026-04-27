@@ -4,12 +4,18 @@ export const metadata: Metadata = {
   title: "How Tether Works | The Psychology of Resilience During Change",
   description:
     "Tether is built on ADKAR, Self-Determination Theory, Psychological Safety, and growth mindset research. Learn the evidence-based psychology behind how Tether helps employees adapt.",
-  alternates: { canonical: "https://tetheredconsulting.com/how-it-works" },
+  alternates: { canonical: "https://www.tetheredconsulting.com/how-it-works" },
   openGraph: {
-    url: "https://tetheredconsulting.com/how-it-works",
+    url: "https://www.tetheredconsulting.com/how-it-works",
     title: "How Tether Works | The Psychology of Resilience During Change",
     description:
       "The evidence-based psychology behind Tether — ADKAR, Self-Determination Theory, Psychological Safety, and more.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "How Tether Works | The Psychology of Resilience During Change",
+    description:
+      "ADKAR, Self-Determination Theory, Psychological Safety, and more. The research behind how Tether helps employees navigate change.",
   },
 };
 

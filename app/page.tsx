@@ -5,12 +5,18 @@ export const metadata: Metadata = {
   title: "Tether — AI Resilience Coaching for Organizational Change",
   description:
     "Tether is a confidential AI resilience coach helping employees navigate AI rollout, layoffs, restructuring, and burnout. Private beta now open for employers.",
-  alternates: { canonical: "https://tetheredconsulting.com" },
+  alternates: { canonical: "https://www.tetheredconsulting.com" },
   openGraph: {
-    url: "https://tetheredconsulting.com",
+    url: "https://www.tetheredconsulting.com",
     title: "Tether — AI Resilience Coaching for Organizational Change",
     description:
       "Confidential resilience coaching that helps employees navigate AI rollout, layoffs, restructuring, and burnout without burning out.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tether — AI Resilience Coaching for Organizational Change",
+    description:
+      "Confidential resilience coaching that helps employees navigate AI rollout, layoffs, restructuring, and burnout. Private beta now open.",
   },
 };
 
@@ -18,7 +24,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Tether",
-  url: "https://tetheredconsulting.com",
+  url: "https://www.tetheredconsulting.com",
   description:
     "Confidential AI resilience coaching for employees navigating organizational change, AI rollout, layoffs, and workplace stress.",
   founder: [
@@ -51,7 +57,7 @@ const serviceSchema = {
   provider: {
     "@type": "Organization",
     name: "Tether",
-    url: "https://tetheredconsulting.com",
+    url: "https://www.tetheredconsulting.com",
   },
   description:
     "An always-on AI resilience coach that helps employees navigate organizational change — AI rollouts, restructuring, layoffs, and burnout — through confidential coaching, employee training, and manager development.",

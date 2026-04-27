@@ -5,12 +5,18 @@ export const metadata: Metadata = {
   title: "Privacy & Trust | Tether",
   description:
     "Tether is built around employee confidentiality. Employers see aggregated trends, never individual conversations. Learn how Tether protects employee privacy during organizational change.",
-  alternates: { canonical: "https://tetheredconsulting.com/privacy" },
+  alternates: { canonical: "https://www.tetheredconsulting.com/privacy" },
   openGraph: {
-    url: "https://tetheredconsulting.com/privacy",
+    url: "https://www.tetheredconsulting.com/privacy",
     title: "Privacy & Trust | Tether",
     description:
       "Employers see aggregated trends, never individual conversations. Tether is built for support, not surveillance.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Privacy & Trust | Tether",
+    description:
+      "Employers see aggregated trends, never individual conversations. Tether is built for employee support, not surveillance.",
   },
 };
 

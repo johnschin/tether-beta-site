@@ -5,12 +5,18 @@ export const metadata: Metadata = {
   title: "Why Tether | Resilience Coaching for Your Workforce",
   description:
     "Support employees through AI rollout, restructuring, and burnout without adding load to managers. Tether combines AI coaching, employee training, and manager development.",
-  alternates: { canonical: "https://tetheredconsulting.com/for-employers" },
+  alternates: { canonical: "https://www.tetheredconsulting.com/for-employers" },
   openGraph: {
-    url: "https://tetheredconsulting.com/for-employers",
+    url: "https://www.tetheredconsulting.com/for-employers",
     title: "Why Tether | Resilience Coaching for Your Workforce",
     description:
       "Support employees through AI rollout, restructuring, and burnout. Tether combines AI coaching, employee training, and manager development to build resilience during change.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Why Tether | Resilience Coaching for Your Workforce",
+    description:
+      "Support employees through AI rollout, restructuring, and burnout without adding load to managers. Built by psychologists, grounded in evidence.",
   },
 };
 

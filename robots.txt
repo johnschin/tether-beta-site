@@ -1,0 +1,66 @@
+# robots.txt — tetheredconsulting.com
+# Updated: 2026-05-01
+
+# ─── Standard search crawlers ─────────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /dashboard.html
+Disallow: /index.html
+Disallow: /landing.html
+Disallow: /trial.html
+Disallow: /phase_d_index.html
+Disallow: /phase_f_index.html
+Disallow: /phase_g_index.html
+Crawl-delay: 1
+
+# ─── Google ───────────────────────────────────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Disallow: /dashboard.html
+Disallow: /trial.html
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+# ─── Bing ─────────────────────────────────────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+Disallow: /dashboard.html
+Disallow: /trial.html
+Crawl-delay: 2
+
+# ─── AI crawlers — allowed to index all public pages ──────────────────────────
+# OpenAI / ChatGPT
+User-agent: GPTBot
+Allow: /
+
+# Anthropic / Claude
+User-agent: ClaudeBot
+Allow: /
+
+# Google AI / Gemini
+User-agent: Google-Extended
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+
+# Common Crawl (used by many AI training pipelines)
+User-agent: CCBot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Apple
+User-agent: Applebot
+Allow: /
+
+# ─── Sitemap ──────────────────────────────────────────────────────────────────
+Sitemap: https://tetheredconsulting.com/sitemap.xml

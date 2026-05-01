@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy &amp; Trust — Tether</title>
+  <!-- ─── SEO ─── -->
+  <meta name="description" content="Tether is built on a foundation of employee privacy. Individual conversations are never shared with employers. Learn how Tether handles data, anonymization, and security in enterprise deployments.">
+  <meta name="keywords" content="Tether privacy, employee data privacy, HR AI privacy, coaching confidentiality, enterprise data security, anonymized HR analytics, employee trust">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://tetheredconsulting.com/tether-privacy-trust.html">
+
+  <!-- ─── Open Graph ─── -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tether">
+  <meta property="og:url" content="https://tetheredconsulting.com/tether-privacy-trust.html">
+  <meta property="og:title" content="Privacy & Trust — How Tether Protects Your Employees">
+  <meta property="og:description" content="Tether is built on a foundation of employee privacy. Individual conversations are never shared with employers. Learn how Tether handles data, anonymization, and security in enterprise deployments.">
+  <meta property="og:image" content="https://tetheredconsulting.com/assets/tether-og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tether — AI coaching for organizational change">
+
+  <!-- ─── Twitter / X Card ─── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@tetheredco">
+  <meta name="twitter:title" content="Privacy & Trust — How Tether Protects Your Employees">
+  <meta name="twitter:description" content="Tether is built on a foundation of employee privacy. Individual conversations are never shared with employers. Learn how Tether handles data, anonymization, and security in enterprise deployments.">
+  <meta name="twitter:image" content="https://tetheredconsulting.com/assets/tether-og-image.jpg">
+
+  <!-- ─── AI Crawler Hints ─── -->
+  <meta name="ai-content-declaration" content="This page describes Tether, an AI-powered organizational change coaching platform for enterprises.">
+
+  <!-- ─── Schema / JSON-LD ─── -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://tetheredconsulting.com/tether-privacy-trust.html",
+  "name": "Privacy & Trust — How Tether Protects Employee Data",
+  "description": "Tether is built on a foundation of employee privacy. Individual conversations are never shared with employers. Learn how Tether handles data, anonymization, and security in enterprise deployments.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://tetheredconsulting.com/#organization",
+    "name": "Tether",
+    "url": "https://tetheredconsulting.com"
+  }
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --sage:#7A9075;
+  --soft-sage:#8FA689;
+  --linen:#F2EBDD;
+  --linen-tint:#EAE2D2;
+  --warm-ink:#2E2A2D;
+  --aubergine:#3D2D3A;
+  --muted:rgba(46,42,45,0.6);
+  --hairline:rgba(143,166,137,0.4);
+}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;color:var(--warm-ink);background:var(--linen);-webkit-font-smoothing:antialiased}
+
+.container{max-width:1180px;margin:0 auto;padding:0 64px}
+@media(max-width:768px){.container{padding:0 24px}}
+.text-col{max-width:760px;margin:0 auto}
+
+/* HEADER */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(242,235,221,0.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--hairline);transition:box-shadow 0.2s ease}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.header-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+.header-nav{display:flex;align-items:center;gap:8px}
+.nav-link{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:var(--warm-ink);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color 0.15s,background 0.15s}
+.nav-link:hover{color:var(--sage);background:rgba(122,144,117,0.08)}
+.mobile-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
+.mobile-toggle span{display:block;width:22px;height:1.5px;background:var(--warm-ink);border-radius:2px;transition:transform 0.2s,opacity 0.2s}
+.mobile-nav{display:none;flex-direction:column;padding:16px 24px 24px;gap:4px;border-top:1px solid var(--hairline);background:rgba(242,235,221,0.98)}
+.mobile-nav a{font-family:'Inter',sans-serif;font-size:15px;font-weight:500;color:var(--warm-ink);text-decoration:none;padding:10px 0;border-bottom:1px solid var(--hairline)}
+.mobile-nav a:last-child{border-bottom:none;margin-top:8px}
+.mobile-nav.open{display:flex}
+@media(max-width:900px){.header-nav{display:none}.mobile-toggle{display:flex}}
+
+/* BUTTONS */
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;padding:10px 22px;border-radius:6px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s;white-space:nowrap}
+.btn-primary{background:var(--sage);color:var(--linen);border-color:var(--sage)}
+.btn-primary:hover{background:var(--soft-sage);border-color:var(--soft-sage)}
+.btn-on-sage{background:var(--linen);color:var(--aubergine);border-color:var(--linen)}
+.btn-secondary{background:transparent;color:var(--sage);border-color:var(--sage)}
+.btn-secondary:hover{background:rgba(122,144,117,0.08)}
+.btn-on-aubergine{background:rgba(242,235,221,0.12);color:var(--linen);border-color:rgba(242,235,221,0.4)}
+.header-cta{font-size:13px;padding:8px 18px}
+
+/* TYPOGRAPHY */
+.eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;color:var(--sage)}
+h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-height:1.2;color:var(--aubergine)}
+h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:26px;line-height:1.3;color:var(--aubergine)}
+.lead{font-family:'Inter',sans-serif;font-size:17px;font-weight:400;line-height:1.6;color:var(--muted)}
+
+@media(max-width:768px){
+  h2{font-size:30px}
+  h3{font-size:22px}
+}
+
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(8px);transition:opacity 400ms ease-out,transform 400ms ease-out}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* SECTIONS */
+.page-header{background:var(--linen);padding:80px 0 64px;border-bottom:1px solid var(--hairline)}
+.section-linen{background:var(--linen);padding:96px 0}
+.section-linen-tint{background:var(--linen-tint);padding:96px 0}
+@media(max-width:768px){
+  .page-header{padding:56px 0 48px}
+  .section-linen,.section-linen-tint{padding:64px 0}
+}
+
+/* PRIVACY BOUNDARY VISUAL */
+.boundary-container{margin-top:56px}
+.boundary-grid{display:grid;grid-template-columns:1fr 4px 1fr;gap:0;border-radius:12px;overflow:hidden}
+@media(max-width:768px){.boundary-grid{grid-template-columns:1fr;gap:0}}
+
+.boundary-panel{padding:40px 36px}
+.boundary-panel-yours{background:rgba(122,144,117,0.08);border:1px solid rgba(143,166,137,0.3);border-right:none;border-radius:12px 0 0 12px}
+.boundary-panel-hr{background:rgba(61,45,58,0.05);border:1px solid rgba(143,166,137,0.3);border-left:none;border-radius:0 12px 12px 0}
+.boundary-divider{background:var(--sage);display:flex;align-items:center;justify-content:center;position:relative}
+.boundary-divider-inner{position:absolute;width:32px;height:32px;border-radius:50%;background:var(--sage);display:flex;align-items:center;justify-content:center}
+@media(max-width:768px){
+  .boundary-panel-yours{border-right:1px solid rgba(143,166,137,0.3);border-bottom:none;border-radius:12px 12px 0 0}
+  .boundary-panel-hr{border-left:1px solid rgba(143,166,137,0.3);border-top:none;border-radius:0 0 12px 12px}
+  .boundary-divider{height:4px;width:100%}
+  .boundary-divider-inner{display:none}
+}
+
+.boundary-label{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px}
+.boundary-label-yours{color:var(--sage)}
+.boundary-label-hr{color:var(--aubergine)}
+.boundary-list{list-style:none;display:flex;flex-direction:column;gap:12px}
+.boundary-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.5;color:var(--warm-ink)}
+.boundary-list .dot{flex-shrink:0;width:6px;height:6px;border-radius:50%;margin-top:6px}
+.dot-sage{background:var(--sage)}
+.dot-aubergine{background:var(--aubergine)}
+
+/* WHY SECTION */
+.why-text{margin-top:40px;display:flex;flex-direction:column;gap:24px}
+.why-text p{font-size:16px;line-height:1.75;color:var(--warm-ink);max-width:680px}
+
+/* DATA TABLE */
+.data-table-wrap{margin-top:48px;overflow-x:auto}
+.data-table{width:100%;border-collapse:collapse;font-size:14px}
+.data-table th{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.1em;color:var(--sage);padding:12px 16px;text-align:left;border-bottom:2px solid var(--hairline)}
+.data-table td{padding:16px;vertical-align:top;border-bottom:1px solid var(--hairline);line-height:1.55;color:var(--warm-ink)}
+.data-table tr:last-child td{border-bottom:none}
+.data-table tr:hover td{background:rgba(122,144,117,0.04)}
+.data-table td:first-child{font-weight:500;color:var(--aubergine)}
+.data-table td:last-child{font-size:13px;color:var(--muted)}
+
+/* SECURITY */
+.security-list{margin-top:32px;display:flex;flex-direction:column;gap:16px}
+.security-item{display:flex;align-items:flex-start;gap:16px;padding:20px 24px;background:rgba(143,166,137,0.08);border:1px solid rgba(143,166,137,0.25);border-radius:8px}
+.security-icon{flex-shrink:0;width:32px;height:32px;background:rgba(122,144,117,0.15);border-radius:6px;display:flex;align-items:center;justify-content:center}
+.security-text{font-size:14px;line-height:1.6;color:var(--warm-ink)}
+.security-text strong{display:block;font-weight:500;color:var(--aubergine);margin-bottom:2px;font-size:13px}
+
+/* LEGAL LINKS */
+.legal-links{margin-top:32px;display:flex;flex-direction:column;gap:0;border:1px solid var(--hairline);border-radius:10px;overflow:hidden}
+.legal-link-item{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid var(--hairline);text-decoration:none;color:var(--warm-ink);transition:background 0.12s}
+.legal-link-item:last-child{border-bottom:none}
+.legal-link-item:hover{background:rgba(122,144,117,0.06)}
+.legal-link-title{font-size:15px;font-weight:500;color:var(--aubergine)}
+.legal-link-arrow{color:var(--sage);font-size:18px}
+
+/* CLOSING */
+.closing-section{padding:64px 0 96px}
+.closing-section p{font-size:15px;line-height:1.7;color:var(--muted);max-width:600px;margin:0 auto;text-align:center}
+.closing-section a{color:var(--sage);text-decoration:none;font-weight:500}
+.closing-section a:hover{text-decoration:underline}
+
+/* FOOTER */
+.site-footer{background:var(--aubergine);padding:80px 0 40px;color:var(--linen)}
+.footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
+.footer-brand p{font-size:14px;line-height:1.7;color:rgba(242,235,221,0.6);margin-top:16px;max-width:220px}
+.footer-col-title{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;color:rgba(242,235,221,0.45);margin-bottom:16px}
+.footer-links{list-style:none}
+.footer-links li{margin-bottom:10px}
+.footer-links a{font-size:14px;color:rgba(242,235,221,0.7);text-decoration:none;transition:color 0.15s}
+.footer-links a:hover{color:var(--linen)}
+.footer-bottom{border-top:1px solid rgba(242,235,221,0.12);padding-top:24px}
+.footer-bottom p{font-size:13px;color:rgba(242,235,221,0.35)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:600px){.footer-top{grid-template-columns:1fr}}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 0;
+    transform: none;
+    transition: opacity 400ms ease-out;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container"><div class="header-inner">
+    <a href="tetheredconsulting_redesign.html" class="header-logo" aria-label="Tether home">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#7A9075"/><circle cx="24" cy="10" r="2.5" fill="#7A9075"/><circle cx="16" cy="23" r="2.5" fill="#7A9075"/></svg>
+      <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;letter-spacing:0.06em;color:var(--aubergine);">Tether</span>
+    </a>
+    <nav class="header-nav">
+      <a href="tether-how-it-works.html" class="nav-link">How It Works</a>
+      <a href="tether-for-employees.html" class="nav-link">Employees</a>
+      <a href="tether-for-managers.html" class="nav-link">Managers</a>
+      <a href="tether-for-hr.html" class="nav-link">HR &amp; L&amp;D</a>
+      <a href="tether-about.html" class="nav-link">About</a>
+      <a href="tether-contact.html" class="btn btn-primary header-cta">Request a demo</a>
+    </nav>
+    <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="tether-how-it-works.html">How It Works</a>
+    <a href="tether-for-employees.html">For Employees</a>
+    <a href="tether-for-managers.html">For Managers</a>
+    <a href="tether-for-hr.html">For HR &amp; L&amp;D</a>
+    <a href="tether-about.html">About</a>
+    <a href="tether-contact.html" class="btn btn-primary">Request a demo</a>
+  </nav>
+</header>
+
+<!-- PAGE HEADER -->
+<section class="page-header">
+  <div class="container">
+    <div class="reveal"><span class="eyebrow">Privacy &amp; Trust</span></div>
+    <div class="reveal" style="margin-top:16px;max-width:680px">
+      <h1>What Tether sees. What it doesn't. And why it matters.</h1>
+    </div>
+    <div class="reveal" style="margin-top:20px;max-width:580px">
+      <p class="lead">Tether only works if employees trust it. That trust requires one thing above everything else: a clear, unbreakable line between individual conversations and organizational reporting.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE BOUNDARY -->
+<section class="section-linen">
+  <div class="container">
+    <div class="reveal">
+      <h3>The line between private and aggregate.</h3>
+    </div>
+    <div class="boundary-container reveal">
+      <div class="boundary-grid">
+
+        <div class="boundary-panel boundary-panel-yours">
+          <p class="boundary-label boundary-label-yours">Your conversations</p>
+          <ul class="boundary-list">
+            <li><span class="dot dot-sage"></span><span>Private. Only you see them during your session.</span></li>
+            <li><span class="dot dot-sage"></span><span>No conversation transcript is ever shared.</span></li>
+            <li><span class="dot dot-sage"></span><span>No session-level reporting to your employer.</span></li>
+            <li><span class="dot dot-sage"></span><span>Not visible to your manager or HR team.</span></li>
+            <li><span class="dot dot-sage"></span><span>Sessions start fresh — not stored persistently.</span></li>
+          </ul>
+        </div>
+
+        <div class="boundary-divider" aria-hidden="true">
+          <div class="boundary-divider-inner">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><line x1="7" y1="2" x2="7" y2="12" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><line x1="2" y1="7" x2="12" y2="7" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+
+        <div class="boundary-panel boundary-panel-hr">
+          <p class="boundary-label boundary-label-hr">What HR sees</p>
+          <ul class="boundary-list">
+            <li><span class="dot dot-aubergine"></span><span>Anonymous, aggregate data only.</span></li>
+            <li><span class="dot dot-aubergine"></span><span>ADKAR stage distribution across the workforce.</span></li>
+            <li><span class="dot dot-aubergine"></span><span>Emotional tone patterns by department (anonymized).</span></li>
+            <li><span class="dot dot-aubergine"></span><span>Usage metrics at cohort level — not individual.</span></li>
+            <li><span class="dot dot-aubergine"></span><span>No names. No attribution. No transcripts.</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY THIS DESIGN -->
+<section class="section-linen-tint">
+  <div class="container">
+    <div class="text-col">
+      <div class="reveal">
+        <h2>The privacy boundary isn't a limitation. It's the product.</h2>
+      </div>
+      <div class="why-text">
+        <p class="reveal">A coaching tool employees approach with suspicion isn't useful. If employees believe their honest conversations might surface in an HR conversation, they won't use the tool honestly. They'll use it carefully — and that careful, guarded engagement produces meaningless data for HR and no real support for the employee.</p>
+        <p class="reveal">The privacy design is intentional: individual conversations stay private so employees can be honest, so they can actually be helped, and so the aggregate signal HR receives reflects genuine organizational sentiment — not managed impressions.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT WE COLLECT -->
+<section class="section-linen">
+  <div class="container">
+    <div class="reveal">
+      <h2>What Tether collects.</h2>
+    </div>
+    <div class="data-table-wrap reveal" style="margin-top:40px">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th style="width:30%">What we collect</th>
+            <th style="width:40%">Why</th>
+            <th style="width:30%">Who sees it</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Email address</td>
+            <td>Account creation and access</td>
+            <td>Tether only</td>
+          </tr>
+          <tr>
+            <td>Coaching session content (during session)</td>
+            <td>To generate coaching responses in real time</td>
+            <td>Tether's AI only — not stored after session ends</td>
+          </tr>
+          <tr>
+            <td>Session timestamps</td>
+            <td>Usage analytics</td>
+            <td>HR dashboard (aggregate only)</td>
+          </tr>
+          <tr>
+            <td>ADKAR stage signal from conversations</td>
+            <td>To power the HR dashboard insights</td>
+            <td>HR dashboard (aggregate and anonymized)</td>
+          </tr>
+          <tr>
+            <td>Safety event flags (if crisis protocol triggered)</td>
+            <td>Compliance and employee safety</td>
+            <td>Logged securely — not linked to individual HR view</td>
+          </tr>
+          <tr>
+            <td>Technical data (browser, IP, device type)</td>
+            <td>Security and diagnostics</td>
+            <td>Tether only</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- SECURITY -->
+<section class="section-linen-tint">
+  <div class="container">
+    <div class="text-col">
+      <div class="reveal">
+        <h2>How we protect it.</h2>
+      </div>
+      <div class="security-list reveal">
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1L2 4v4c0 3.3 2.5 6.4 6 7.1C12 14.4 14 11.3 14 8V4L8 1z" stroke="#7A9075" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>HTTPS encryption</strong>
+            All data in transit is encrypted end-to-end via HTTPS.
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="3" y="7" width="10" height="7" rx="1.5" stroke="#7A9075" stroke-width="1.4"/><path d="M5 7V5a3 3 0 016 0v2" stroke="#7A9075" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>Row-level database security</strong>
+            Database permissions are enforced at the row level — each user can only access their own data.
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8l4 4 8-8" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>Magic link authentication</strong>
+            No passwords are stored. Access is granted via secure, time-limited email links.
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#7A9075" stroke-width="1.4"/><path d="M8 5v3l2 2" stroke="#7A9075" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>Minimal data collection</strong>
+            We only collect what is necessary to provide the service. Session conversation content is not stored after a session ends.
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="2" y="4" width="12" height="9" rx="1.5" stroke="#7A9075" stroke-width="1.4"/><path d="M5 4V3a1 1 0 011-1h4a1 1 0 011 1v1" stroke="#7A9075" stroke-width="1.4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>Stripe for payments</strong>
+            Payment processing is handled by Stripe. We never store payment card data.
+          </div>
+        </div>
+        <div class="security-item">
+          <div class="security-icon">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="#7A9075" stroke-width="1.4"/><path d="M5.5 8.5l2 1.5 3-4" stroke="#7A9075" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="security-text">
+            <strong>Data processed in the United States</strong>
+            All data is stored and processed on servers located in the United States.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LEGAL LINKS -->
+<section class="section-linen">
+  <div class="container">
+    <div class="text-col">
+      <div class="reveal">
+        <h2>For full detail.</h2>
+      </div>
+      <div class="reveal" style="margin-top:16px">
+        <p style="font-size:15px;line-height:1.7;color:var(--muted);margin-bottom:32px">This page is a plain-language summary. The legal versions are here:</p>
+      </div>
+      <div class="legal-links reveal">
+        <a href="tether-privacy.html" class="legal-link-item">
+          <span class="legal-link-title">Privacy Policy</span>
+          <span class="legal-link-arrow">&#8594;</span>
+        </a>
+        <a href="tether-terms.html" class="legal-link-item">
+          <span class="legal-link-title">Terms of Service</span>
+          <span class="legal-link-arrow">&#8594;</span>
+        </a>
+        <a href="tether-ai-disclosure.html" class="legal-link-item">
+          <span class="legal-link-title">AI Disclosure</span>
+          <span class="legal-link-arrow">&#8594;</span>
+        </a>
+        <a href="tether-crisis-protocol.html" class="legal-link-item">
+          <span class="legal-link-title">Crisis Escalation Protocol</span>
+          <span class="legal-link-arrow">&#8594;</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing-section">
+  <div class="container">
+    <div class="reveal">
+      <p>Questions about our data practices? Contact us at <a href="mailto:joree@comcast.net">joree@comcast.net</a> — we respond to every inquiry.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="tetheredconsulting_redesign.html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/></svg></a>
+        <p>Steady, present support for organizations and the people inside them.</p>
+        <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(242,235,221,0.6);margin-top:8px">steady, present, in the moment</p>
+      </div>
+      <div><p class="footer-col-title">Product</p><ul class="footer-links"><li><a href="tether-how-it-works.html">How It Works</a></li><li><a href="tether-for-employees.html">For Employees</a></li><li><a href="tether-for-managers.html">For Managers</a></li><li><a href="tether-for-hr.html">For HR &amp; L&amp;D</a></li></ul></div>
+      <div><p class="footer-col-title">Company</p><ul class="footer-links"><li><a href="tether-about.html">About</a></li><li><a href="tether-faq.html">FAQ</a></li><li><a href="tether-contact.html">Request a demo</a></li></ul></div>
+      <div><p class="footer-col-title">Legal &amp; Trust</p><ul class="footer-links"><li><a href="tether-terms.html">Terms of Service</a></li><li><a href="tether-privacy.html">Privacy Policy</a></li><li><a href="tether-ai-disclosure.html">AI Disclosure</a></li><li><a href="tether-privacy-trust.html">Privacy &amp; Trust</a></li><li><a href="tether-crisis-protocol.html">Crisis Escalation Protocol</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><p>© 2026 Tethered Consulting. All rights reserved.</p></div>
+  </div>
+</footer>
+
+<script>
+const t=document.getElementById('menu-toggle'),mn=document.getElementById('mobile-nav');
+t.addEventListener('click',()=>{const o=mn.classList.toggle('open');t.setAttribute('aria-expanded',o);const s=t.querySelectorAll('span');if(o){s[0].style.transform='translateY(6.5px) rotate(45deg)';s[1].style.opacity='0';s[2].style.transform='translateY(-6.5px) rotate(-45deg)';}else s.forEach(x=>{x.style.transform='';x.style.opacity='';});});
+mn.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{mn.classList.remove('open');t.setAttribute('aria-expanded','false');t.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';});}));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const si=[...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];setTimeout(()=>e.target.classList.add('visible'),Math.min(si.indexOf(e.target)*60,300));obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{document.querySelector('.site-header').style.boxShadow=window.scrollY>8?'0 2px 24px rgba(46,42,45,0.08)':'none';},{passive:true});
+</script>
+</body>
+</html>

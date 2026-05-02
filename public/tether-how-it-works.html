@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — Tether</title>
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon-64.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <!-- ─── SEO ─── -->
+  <meta name="description" content="Tether guides employees and managers through seven stages of organizational change using ADKAR, CBT, and motivational interviewing — delivered as private, always-available AI coaching.">
+  <meta name="keywords" content="ADKAR methodology, CBT coaching, change management methodology, how AI coaching works, organizational change stages, motivational interviewing HR, change readiness framework">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://tetheredconsulting.com/tether-how-it-works.html">
+
+  <!-- ─── Open Graph ─── -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Tether">
+  <meta property="og:url" content="https://tetheredconsulting.com/tether-how-it-works.html">
+  <meta property="og:title" content="How Tether Works — The Methodology Behind the Coaching">
+  <meta property="og:description" content="Tether guides employees and managers through seven stages of organizational change using ADKAR, CBT, and motivational interviewing — delivered as private, always-available AI coaching.">
+  <meta property="og:image" content="https://tetheredconsulting.com/tether-og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Tether — AI coaching for organizational change">
+
+  <!-- ─── Twitter / X Card ─── -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@tetheredco">
+  <meta name="twitter:title" content="How Tether Works — The Methodology Behind the Coaching">
+  <meta name="twitter:description" content="Tether guides employees and managers through seven stages of organizational change using ADKAR, CBT, and motivational interviewing — delivered as private, always-available AI coaching.">
+  <meta name="twitter:image" content="https://tetheredconsulting.com/tether-og-image.jpg">
+
+  <!-- ─── AI Crawler Hints ─── -->
+  <meta name="ai-content-declaration" content="This page describes Tether, an AI-powered organizational change coaching platform for enterprises.">
+
+  <!-- ─── Schema / JSON-LD ─── -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "url": "https://tetheredconsulting.com/tether-how-it-works.html",
+  "name": "How Tether Works — ADKAR + CBT Change Coaching Methodology",
+  "description": "Tether guides employees and managers through seven stages of organizational change using ADKAR, CBT, and motivational interviewing — delivered as private, always-available AI coaching.",
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://tetheredconsulting.com/#organization",
+    "name": "Tether",
+    "url": "https://tetheredconsulting.com"
+  }
+}
+</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* ─── RESET ─── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    img, svg { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    button { cursor: pointer; font: inherit; }
+
+    /* ─── TOKENS ─── */
+    :root {
+      --sage:        #7A9075;
+      --soft-sage:   #8FA689;
+      --linen:       #F2EBDD;
+      --linen-tint:  #EAE2D2;
+      --warm-ink:    #2E2A2D;
+      --aubergine:   #3D2D3A;
+      --muted:       rgba(46, 42, 45, 0.6);
+      --hairline:    rgba(143, 166, 137, 0.4);
+
+      --container:   1180px;
+      --text-col:    680px;
+      --gutter-d:    64px;
+      --gutter-m:    24px;
+      --radius-btn:  8px;
+      --radius-card: 12px;
+    }
+
+    /* ─── BASE ─── */
+    body {
+      background: var(--linen);
+      color: var(--warm-ink);
+      font-family: 'Inter', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ─── CONTAINER ─── */
+    .container {
+      max-width: var(--container);
+      margin-inline: auto;
+      padding-inline: var(--gutter-d);
+    }
+
+    /* ─── TYPE SCALE ─── */
+    .h1 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: 64px;
+      line-height: 1.1;
+      color: var(--aubergine);
+    }
+    .h1-linen { color: var(--linen); }
+
+    .h2 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 300;
+      font-size: 40px;
+      line-height: 1.2;
+      color: var(--aubergine);
+    }
+    .h2-linen { color: var(--linen); }
+
+    .h3 {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.3;
+      color: var(--aubergine);
+    }
+
+    .pull-quote {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 1.4;
+      color: var(--aubergine);
+    }
+    .pull-quote-linen { color: var(--linen); }
+
+    .lead {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 1.5;
+      color: var(--warm-ink);
+    }
+    .lead-linen { color: rgba(242, 235, 221, 0.88); }
+
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      line-height: 1;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage);
+    }
+    .eyebrow-linen { color: rgba(242, 235, 221, 0.7); }
+
+    /* ─── BUTTONS ─── */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      padding: 14px 28px;
+      border-radius: var(--radius-btn);
+      border: none;
+      transition: background 200ms ease, color 200ms ease, outline 200ms ease;
+      white-space: nowrap;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--sage);
+      color: var(--linen);
+    }
+    .btn-primary:hover { background: var(--soft-sage); }
+
+    .btn-on-sage {
+      background: var(--linen);
+      color: var(--aubergine);
+    }
+    .btn-on-sage:hover {
+      background: rgba(242, 235, 221, 0.9);
+      outline: 1px solid var(--soft-sage);
+    }
+
+    .btn-on-aubergine {
+      background: var(--linen);
+      color: var(--aubergine);
+      border: none;
+    }
+    .btn-on-aubergine:hover {
+      background: rgba(242, 235, 221, 0.9);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--sage);
+      border: 1.5px solid var(--sage);
+    }
+    .btn-secondary:hover {
+      background: var(--sage);
+      color: var(--linen);
+    }
+
+    /* ─── CARDS ─── */
+    .card {
+      background: rgba(143, 166, 137, 0.12);
+      border: 1px solid rgba(143, 166, 137, 0.3);
+      border-radius: var(--radius-card);
+      padding: 32px;
+    }
+    .card-on-sage {
+      background: var(--soft-sage);
+      border: none;
+      border-radius: var(--radius-card);
+      padding: 32px;
+      color: var(--linen);
+    }
+
+    /* ─── NAV LINKS ─── */
+    .nav-link {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1;
+      letter-spacing: 0.04em;
+      color: var(--warm-ink);
+      padding: 8px 0;
+      border-bottom: 1px solid transparent;
+      transition: border-color 200ms ease, color 200ms ease;
+    }
+    .nav-link:hover { border-bottom-color: var(--sage); }
+
+    /* ─── HEADER ─── */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(242, 235, 221, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--hairline);
+      transition: box-shadow 200ms ease;
+    }
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+    .header-logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+    .header-cta { margin-left: 16px; }
+    .logo-mark { width: 32px; height: 32px; flex-shrink: 0; }
+    .logo-wordmark {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0.06em;
+      color: var(--aubergine);
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      padding: 8px;
+    }
+    .mobile-toggle span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--warm-ink);
+      transition: all 200ms ease;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      gap: 4px;
+      padding: 16px var(--gutter-m) 24px;
+      background: var(--linen);
+      border-top: 1px solid var(--hairline);
+    }
+    .mobile-nav.open { display: flex; }
+    .mobile-nav a {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 15px;
+      color: var(--warm-ink);
+      padding: 10px 0;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .mobile-nav .btn { margin-top: 12px; text-align: center; justify-content: center; }
+
+    /* ─── HERO ─── */
+    .hero {
+      background: var(--sage);
+      padding: 112px 0 104px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-bg-mark {
+      position: absolute;
+      top: -20px;
+      right: -60px;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 680px;
+    }
+    .hero-eyebrow { margin-bottom: 24px; }
+    .hero h1 { margin-bottom: 24px; }
+
+    /* ─── SECTIONS ─── */
+    .section { padding: 112px 0; }
+    .section-linen { background: var(--linen); }
+    .section-sage { background: var(--sage); }
+    .section-aubergine { background: var(--aubergine); }
+    .section-linen-tint { background: var(--linen-tint); }
+
+    /* ─── SCROLL REVEAL ─── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(8px);
+      transition: opacity 400ms ease-out, transform 400ms ease-out;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ─── STAGE SECTIONS ─── */
+    .stage-section {
+      padding: 96px 0;
+      background: var(--linen);
+    }
+    .stage-section:nth-child(even) {
+      background: var(--linen-tint);
+    }
+    .stage-inner {
+      max-width: var(--text-col);
+    }
+    .stage-kicker {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 20px;
+    }
+    .stage-inner .h2 { margin-bottom: 28px; }
+    .stage-inner p { color: var(--warm-ink); margin-bottom: 20px; }
+    .stage-inner p:last-of-type { margin-bottom: 0; }
+
+    .stage-tether-card {
+      background: rgba(143, 166, 137, 0.12);
+      border: 1px solid rgba(143, 166, 137, 0.3);
+      border-radius: var(--radius-card);
+      padding: 28px 32px;
+      margin-top: 36px;
+    }
+    .stage-tether-card-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--sage);
+      margin-bottom: 16px;
+    }
+    .stage-tether-card ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .stage-tether-card ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--warm-ink);
+    }
+    .stage-tether-card ul li::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--sage);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+    .stage-adkar {
+      margin-top: 24px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: 18px;
+      line-height: 1.5;
+      color: var(--muted);
+    }
+
+    /* ─── INTERLUDE ─── */
+    .interlude {
+      background: var(--sage);
+      padding: 80px 0;
+      text-align: center;
+    }
+    .interlude-inner { max-width: 640px; margin-inline: auto; }
+    .interlude .pull-quote-linen {
+      font-size: 28px;
+    }
+
+    /* ─── DELIVERY CARDS ─── */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+    .delivery-card {
+      background: rgba(143, 166, 137, 0.12);
+      border: 1px solid rgba(143, 166, 137, 0.3);
+      border-radius: var(--radius-card);
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .delivery-card .h3 { font-size: 24px; margin-bottom: 4px; }
+    .delivery-card p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+    /* ─── IS / IS NOT ─── */
+    .comparison-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 48px;
+    }
+    .comparison-col {
+      border-radius: var(--radius-card);
+      overflow: hidden;
+    }
+    .comparison-header {
+      padding: 20px 28px;
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: var(--linen);
+    }
+    .comparison-header-sage { background: var(--sage); }
+    .comparison-header-aubergine { background: var(--aubergine); }
+    .comparison-body {
+      background: rgba(143, 166, 137, 0.1);
+      border: 1px solid rgba(143, 166, 137, 0.25);
+      border-top: none;
+      padding: 24px 28px;
+      border-radius: 0 0 var(--radius-card) var(--radius-card);
+    }
+    .comparison-body ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .comparison-body ul li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--warm-ink);
+    }
+    .comparison-body ul li::before {
+      content: '';
+      display: block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--sage);
+      margin-top: 7px;
+      flex-shrink: 0;
+    }
+
+    /* ─── CTA BAND ─── */
+    .cta-band {
+      background: var(--aubergine);
+      padding: 96px 0;
+      text-align: center;
+    }
+    .cta-band-inner { max-width: 640px; margin-inline: auto; }
+    .cta-band .h2 { color: var(--linen); margin-bottom: 40px; }
+    .cta-band-actions { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+
+    /* ─── FOOTER ─── */
+    .site-footer {
+      background: var(--sage);
+      color: var(--linen);
+      padding: 80px 0 40px;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1.5fr;
+      gap: 48px;
+      padding-bottom: 56px;
+      border-bottom: 1px solid rgba(242, 235, 221, 0.2);
+    }
+    .footer-brand {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .footer-brand p {
+      font-size: 14px;
+      line-height: 1.6;
+      color: rgba(242, 235, 221, 0.75);
+      max-width: 260px;
+    }
+    .footer-tagline {
+      font-size: 12px;
+      color: rgba(242, 235, 221, 0.5);
+      letter-spacing: 0.04em;
+    }
+    .footer-col-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(242, 235, 221, 0.5);
+      margin-bottom: 20px;
+    }
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .footer-links a {
+      font-size: 14px;
+      color: rgba(242, 235, 221, 0.8);
+      transition: color 150ms ease;
+    }
+    .footer-links a:hover { color: var(--linen); }
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 32px;
+      font-size: 12px;
+      color: rgba(242, 235, 221, 0.45);
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 960px) {
+      .container { padding-inline: var(--gutter-m); }
+      .header-nav { display: none; }
+      .mobile-toggle { display: flex; }
+
+      .hero { padding: 72px 0 64px; }
+      .h1 { font-size: 44px; }
+      .h2 { font-size: 32px; }
+
+      .section { padding: 72px 0; }
+      .stage-section { padding: 64px 0; }
+      .delivery-grid { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 32px; }
+      .footer-bottom { flex-direction: column; gap: 8px; text-align: center; }
+
+      .interlude { padding: 56px 0; }
+      .cta-band { padding: 72px 0; }
+    }
+
+    @media (max-width: 600px) {
+      .h1 { font-size: 36px; }
+      .footer-top { grid-template-columns: 1fr; }
+    }
+
+    /* ─── SECTION HEADER ─── */
+    .section-header { max-width: var(--text-col); margin-bottom: 56px; }
+    .section-header .eyebrow { margin-bottom: 16px; }
+    .section-header .h2 { margin-bottom: 20px; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .reveal {
+        opacity: 0;
+        transform: none;
+        transition: opacity 400ms ease-out;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ─── HEADER ─── -->
+<header class="site-header">
+  <div class="container">
+    <div class="header-inner">
+      <a href="tetheredconsulting_redesign.html" class="header-logo" aria-label="Tether home">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none">
+          <line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/>
+          <line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="8" cy="10" r="2.5" fill="#7A9075"/>
+          <circle cx="24" cy="10" r="2.5" fill="#7A9075"/>
+          <circle cx="16" cy="23" r="2.5" fill="#7A9075"/>
+        </svg>
+        <span class="logo-wordmark">Tether</span>
+      </a>
+      <nav class="header-nav">
+        <a href="tether-how-it-works.html" class="nav-link">How It Works</a>
+        <a href="tether-for-employees.html" class="nav-link">Employees</a>
+        <a href="tether-for-managers.html" class="nav-link">Managers</a>
+        <a href="tether-for-hr.html" class="nav-link">HR &amp; L&amp;D</a>
+        <a href="tether-about.html" class="nav-link">About</a>
+        <a href="tether-contact.html" class="btn btn-primary header-cta">Request a demo</a>
+      </nav>
+      <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <a href="tether-how-it-works.html">How It Works</a>
+    <a href="tether-for-employees.html">For Employees</a>
+    <a href="tether-for-managers.html">For Managers</a>
+    <a href="tether-for-hr.html">For HR &amp; L&amp;D</a>
+    <a href="tether-about.html">About</a>
+    <a href="tether-contact.html" class="btn btn-primary">Request a demo</a>
+  </nav>
+</header>
+
+<!-- ─── HERO ─── -->
+<section class="hero">
+  <svg class="hero-bg-mark" width="520" height="520" viewBox="0 0 520 520" fill="none" aria-hidden="true">
+    <line x1="130" y1="160" x2="390" y2="160" stroke="#F2EBDD" stroke-width="2"/>
+    <line x1="260" y1="160" x2="260" y2="374" stroke="#F2EBDD" stroke-width="2"/>
+    <circle cx="130" cy="160" r="40" stroke="#F2EBDD" stroke-width="2"/>
+    <circle cx="390" cy="160" r="40" stroke="#F2EBDD" stroke-width="2"/>
+    <circle cx="260" cy="374" r="40" stroke="#F2EBDD" stroke-width="2"/>
+  </svg>
+  <div class="container">
+    <div class="hero-inner">
+      <p class="eyebrow eyebrow-linen hero-eyebrow reveal">The methodology</p>
+      <h1 class="h1 h1-linen reveal">Seven stages.<br>One employee at a time.</h1>
+      <p class="lead lead-linen reveal" style="max-width: 540px; margin-top: 24px;">Every person moves through change at their own pace. Tether meets them where they are — with coaching that fits the stage they're actually in.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTRO SECTION ─── -->
+<section class="section section-linen">
+  <div class="container">
+    <div style="max-width: var(--text-col);">
+      <p class="eyebrow reveal" style="margin-bottom: 20px;">The framework</p>
+      <h2 class="h2 reveal" style="margin-bottom: 32px;">ADKAR isn't just a framework. It's a map of how change actually happens inside people.</h2>
+      <p class="reveal" style="margin-bottom: 20px; color: var(--warm-ink);">Most change programs treat adoption as a communications problem. Send the right email. Run the right training. Check the box. What they miss is that every individual must make an internal journey — through awareness, through desire, through skill-building — before any change actually takes hold. ADKAR describes that journey with precision. And it reveals exactly where organizations lose people: not in the strategy, but in the space between the announcement and the behavior change.</p>
+      <p class="reveal" style="color: var(--warm-ink);">Tether makes the map actionable. Rather than delivering generic support or one-size-fits-all training, Tether identifies where each employee is in their journey and delivers the right coaching at the right moment — automatically, privately, and at scale. The result is an organization that doesn't just announce change. It actually moves through it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STAGE 01 — AWARENESS ─── -->
+<section class="stage-section">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 01 — Awareness</p>
+      <h2 class="h2 reveal">People can't change what they don't know is changing.</h2>
+      <p class="reveal">This stage is about understanding — not just that a change is happening, but what it means for the individual specifically. Most organizations announce change with confidence, assuming that once employees hear the message, they're ready to engage. They aren't. Awareness is rarely achieved in a single all-hands meeting or a company-wide email.</p>
+      <p class="reveal">Employees in this stage are processing the announcement on a deeply personal level: What does this mean for my role? My team? My day-to-day? Without support here, confusion calcifies into resistance — and organizations wonder later why adoption stalled.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Helps employees process the announcement and normalize their initial reactions</li>
+          <li>Clarifies what the change actually means for their specific role and team</li>
+          <li>Surfaces the questions they're afraid to raise with their manager or HR</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I understand why this change is happening and what it means for me."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STAGE 02 — DESIRE ─── -->
+<section class="stage-section" style="background: var(--linen-tint);">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 02 — Desire</p>
+      <h2 class="h2 reveal">Knowing about a change doesn't create the motivation to move toward it.</h2>
+      <p class="reveal">Desire is earned, not assumed. This is the most skipped stage in most change programs — and often the precise reason adoption fails months later. You can create perfect awareness of a change and still watch employees disengage, comply minimally, or quietly wait it out. The missing ingredient is almost always desire.</p>
+      <p class="reveal">Desire can't be mandated. It has to be discovered — through a process of helping people find their own reasons to engage, understand what's at risk in resisting, and reconnect with values that align with where things are heading. Tether facilitates that discovery privately and without pressure.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Helps employees find their own reasons to engage with the change</li>
+          <li>Identifies what's at risk — professionally and personally — in staying stuck</li>
+          <li>Reconnects employees with values that align with where the organization is heading</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I have a reason to participate in and support this change."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTERLUDE AFTER STAGE 02 ─── -->
+<div class="interlude">
+  <div class="container">
+    <div class="interlude-inner">
+      <p class="pull-quote pull-quote-linen reveal">"Desire can't be mandated. It has to be discovered — one person at a time."</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── STAGE 03 — KNOWLEDGE ─── -->
+<section class="stage-section">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 03 — Knowledge</p>
+      <h2 class="h2 reveal">Once someone wants to change, they need to know how.</h2>
+      <p class="reveal">What skills are needed? What behaviors look different? What processes work differently now? Knowledge is the bridge between wanting to change and knowing how to change — and it's often more specific, more role-dependent, and more overwhelming than organizations anticipate.</p>
+      <p class="reveal">This stage often overwhelms people because too much information arrives at once, without a clear path for their specific situation. Tether helps employees break knowledge into manageable pieces, identify their actual gaps, and build a learning path that fits the reality of their role — not the generic version of it.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Helps employees identify their specific knowledge gaps rather than general ones</li>
+          <li>Supports them in building a learning path that fits their actual role</li>
+          <li>Creates space to ask the questions they're afraid to raise with their manager</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I know what I need to do to change."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STAGE 04 — ABILITY ─── -->
+<section class="stage-section" style="background: var(--linen-tint);">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 04 — Ability</p>
+      <h2 class="h2 reveal">Knowing what to do and being able to do it are not the same thing.</h2>
+      <p class="reveal">This is where most change programs quietly fall apart. They provide knowledge but not practice. Information but not support. The gap between knowing and doing is real, and it's especially painful in professional environments where people are expected to perform competently from day one.</p>
+      <p class="reveal">The early, awkward phase of practicing new behaviors is uncomfortable — and without a safe space to navigate it, employees default to old patterns or retreat entirely. Tether creates that space: private, non-judgmental, and focused entirely on helping them move from knowing to doing.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Coaches employees through the early, uncomfortable phase of practicing new behaviors</li>
+          <li>Normalizes the discomfort of not yet being competent — so they don't abandon the attempt</li>
+          <li>Provides a safe space to process stumbles without fear of performance consequences</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I am able to implement the required skills and behaviors."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTERLUDE AFTER STAGE 04 ─── -->
+<div class="interlude">
+  <div class="container">
+    <div class="interlude-inner">
+      <p class="pull-quote pull-quote-linen reveal">"The gap between knowing and doing is where most change programs lose people. Tether lives in that gap."</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── STAGE 05 — REINFORCEMENT ─── -->
+<section class="stage-section">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 05 — Reinforcement</p>
+      <h2 class="h2 reveal">New behaviors without reinforcement don't last.</h2>
+      <p class="reveal">This stage is about cementing what's changed — through acknowledgment, accountability, and the gradual realization that the new way is actually working. Many organizations declare victory after rollout. They check adoption metrics, see decent numbers, and move on to the next initiative. What they don't see is the quiet backslide happening six weeks later.</p>
+      <p class="reveal">Reinforcement isn't nagging. It's the steady reminder that the work someone has done is real, that the new behavior is becoming natural, and that slipping occasionally doesn't mean failing. Tether checks in at the right moments — not too often, not too late.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Checks in with employees as they continue practicing the new behaviors</li>
+          <li>Celebrates small wins — including the ones no one else sees</li>
+          <li>Helps them notice slippage and get back on track without shame</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I can sustain the change and continue to improve."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── STAGE 06 — INTEGRATION ─── -->
+<section class="stage-section" style="background: var(--linen-tint);">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 06 — Integration</p>
+      <h2 class="h2 reveal">The change stops being "the new thing" and becomes just how things work.</h2>
+      <p class="reveal">Integration is the quiet, unglamorous stage where change becomes culture. There are no announcements here, no celebration emails from the CEO. This is the period when new behaviors become muscle memory — when an employee stops thinking about the new process and simply uses it, when the reorganization stops feeling like disruption and starts feeling like context.</p>
+      <p class="reveal">Most organizations don't support this stage at all, because it doesn't look like a problem. But without intentional integration, change remains fragile. Tether helps employees reflect on how far they've come and anchor the new way of working before the next change begins.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Helps employees reflect on how far they've come from where they started</li>
+          <li>Normalizes the new way of working through structured reflection</li>
+          <li>Prepares employees for the next change with more capacity than before</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"This is now how I work."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INTERLUDE AFTER STAGE 06 ─── -->
+<div class="interlude">
+  <div class="container">
+    <div class="interlude-inner">
+      <p class="pull-quote pull-quote-linen reveal">"Change becomes culture not in the announcement, but in the quiet moment someone stops noticing they're doing it differently."</p>
+    </div>
+  </div>
+</div>
+
+<!-- ─── STAGE 07 — RESILIENCE ─── -->
+<section class="stage-section">
+  <div class="container">
+    <div class="stage-inner">
+      <p class="stage-kicker reveal">Stage 07 — Resilience</p>
+      <h2 class="h2 reveal">Each change builds the muscle for the next one.</h2>
+      <p class="reveal">Organizations that support their people through change well don't just complete a transition — they build capacity. Employees who've been properly supported through a difficult change arrive at the other side with something most training programs can't create: the lived experience of navigating uncertainty and coming out intact.</p>
+      <p class="reveal">That experience compounds. Employees who've built change resilience are faster to adapt, less reactive to disruption, and more capable of supporting their colleagues and direct reports through future transitions. Tether helps employees recognize and name the resilience they've built — so they carry it forward.</p>
+      <div class="stage-tether-card reveal">
+        <p class="stage-tether-card-title">What Tether does at this stage</p>
+        <ul>
+          <li>Helps employees recognize and articulate the resilience they've built through this change</li>
+          <li>Identifies patterns in how they navigate change — so they can use them intentionally</li>
+          <li>Supports sharing insights with teams, where appropriate, to build organizational capacity</li>
+        </ul>
+      </div>
+      <p class="stage-adkar reveal">"I am stronger in the face of future change."</p>
+    </div>
+  </div>
+</section>
+
+<!-- ─── HOW TETHER DELIVERS ─── -->
+<section class="section section-linen-tint">
+  <div class="container">
+    <div class="section-header">
+      <p class="eyebrow reveal" style="margin-bottom: 16px;">The delivery</p>
+      <h2 class="h2 reveal">Steady support, delivered in three ways.</h2>
+    </div>
+    <div class="delivery-grid">
+      <div class="delivery-card reveal">
+        <h3 class="h3">In the moment</h3>
+        <p>When the announcement drops, when the confusion hits, when the frustration peaks. Tether is available immediately — not at next quarter's training or during next month's manager check-in.</p>
+      </div>
+      <div class="delivery-card reveal">
+        <h3 class="h3">Scenario-specific</h3>
+        <p>Not generic wellness advice. Coaching built for the actual change scenario the employee is navigating — the reorg, the new manager, the system rollout, the leadership transition.</p>
+      </div>
+      <div class="delivery-card reveal">
+        <h3 class="h3">Private and safe</h3>
+        <p>Everything an employee shares with Tether is confidential. HR sees anonymized, aggregate data about how change is landing across the organization. Not individual conversations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── WHAT IT REPLACES ─── -->
+<section class="section section-linen">
+  <div class="container">
+    <div style="max-width: var(--text-col); margin-bottom: 48px;">
+      <p class="eyebrow reveal" style="margin-bottom: 16px;">The role</p>
+      <h2 class="h2 reveal" style="margin-bottom: 24px;">What Tether replaces — and what it doesn't.</h2>
+      <p class="reveal">Tether is not a replacement for your change management strategy, your managers, or your EAP. It's the layer that's been missing — the one that actually reaches individuals at the moment they're in the middle of figuring things out.</p>
+    </div>
+    <div class="comparison-grid">
+      <div class="comparison-col reveal">
+        <div class="comparison-header comparison-header-sage">What Tether replaces</div>
+        <div class="comparison-body">
+          <ul>
+            <li>One-size-fits-all change communications that treat all employees as identical</li>
+            <li>Generic well-being check-ins that don't address the actual change underway</li>
+            <li>Waiting for employees to self-identify as struggling before offering support</li>
+            <li>Guessing how change is landing across the org based on limited manager feedback</li>
+          </ul>
+        </div>
+      </div>
+      <div class="comparison-col reveal">
+        <div class="comparison-header comparison-header-aubergine">What Tether doesn't replace</div>
+        <div class="comparison-body">
+          <ul>
+            <li>Your change management framework — Prosci, ADKAR, Kotter, or otherwise</li>
+            <li>Manager-employee conversations and the human relationship at their core</li>
+            <li>Your EAP, for employees who need clinical mental health support</li>
+            <li>HR judgment, human oversight, and organizational decision-making</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA BAND ─── -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-inner">
+      <h2 class="h2 reveal" style="color: var(--linen);">See how Tether would work in your organization.</h2>
+      <div class="cta-band-actions reveal">
+        <a href="tether-contact.html" class="btn btn-on-aubergine">Request a demo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="tetheredconsulting_redesign.html">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/>
+            <circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/>
+            <circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/>
+          </svg>
+        </a>
+        <p>Steady, present support for organizations and the people inside them.</p>
+        <p class="footer-tagline">steady, present, in the moment</p>
+      </div>
+      <div>
+        <p class="footer-col-title">Product</p>
+        <ul class="footer-links">
+          <li><a href="tether-how-it-works.html">How It Works</a></li>
+          <li><a href="tether-for-employees.html">For Employees</a></li>
+          <li><a href="tether-for-managers.html">For Managers</a></li>
+          <li><a href="tether-for-hr.html">For HR &amp; L&amp;D</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Company</p>
+        <ul class="footer-links">
+          <li><a href="tether-about.html">About</a></li>
+          <li><a href="tether-faq.html">FAQ</a></li>
+          <li><a href="tether-contact.html">Request a demo</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-col-title">Legal &amp; Trust</p>
+        <ul class="footer-links">
+          <li><a href="tether-terms.html">Terms of Service</a></li>
+          <li><a href="tether-privacy.html">Privacy Policy</a></li>
+          <li><a href="tether-ai-disclosure.html">AI Disclosure</a></li>
+          <li><a href="tether-privacy-trust.html">Privacy &amp; Trust</a></li>
+          <li><a href="tether-crisis-protocol.html">Crisis Escalation Protocol</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Tethered Consulting. All rights reserved.</p>
+      <p class="footer-tagline" style="font-style:italic;">steady, present, in the moment</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const toggle = document.getElementById('menu-toggle');
+const mobileNav = document.getElementById('mobile-nav');
+toggle.addEventListener('click', () => {
+  const isOpen = mobileNav.classList.toggle('open');
+  toggle.setAttribute('aria-expanded', isOpen);
+  const spans = toggle.querySelectorAll('span');
+  if (isOpen) { spans[0].style.transform='translateY(6.5px) rotate(45deg)'; spans[1].style.opacity='0'; spans[2].style.transform='translateY(-6.5px) rotate(-45deg)'; }
+  else { spans.forEach(s => { s.style.transform=''; s.style.opacity=''; }); }
+});
+mobileNav.querySelectorAll('a').forEach(l => l.addEventListener('click', () => { mobileNav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); toggle.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';}); }));
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting){ const sibs=[...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')]; const delay=sibs.indexOf(e.target)*60; setTimeout(()=>e.target.classList.add('visible'),Math.min(delay,300)); obs.unobserve(e.target); } }), {threshold:0.1,rootMargin:'0px 0px -40px 0px'});
+reveals.forEach(el=>obs.observe(el));
+window.addEventListener('scroll',()=>{ document.querySelector('.site-header').style.boxShadow=window.scrollY>8?'0 2px 24px rgba(46,42,45,0.08)':'none'; },{passive:true});
+</script>
+</body>
+</html>

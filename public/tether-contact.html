@@ -12,7 +12,7 @@
   <meta name="description" content="See Tether in action. Request a personalized demo for your organization and learn how Tether supports employees, managers, and HR leaders through any organizational change program.">
   <meta name="keywords" content="Tether demo, change management demo, HR technology demo, request demo, organizational change platform, employee coaching platform">
   <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <link rel="canonical" href="https://tetheredconsulting.com/tether-contact.html">
+  <link rel="canonical" href="https://www.tetheredconsulting.com/tether-contact.html">
 
   <!-- ─── Open Graph ─── -->
   <meta property="og:type" content="website">
@@ -168,18 +168,13 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-he
     transition: opacity 400ms ease-out;
   }
 }
-
-.form-status{display:none;border-radius:8px;padding:12px 16px;font-size:14px;margin-top:16px;text-align:center}
-.form-status.success{display:block;background:rgba(122,144,117,0.15);border:1px solid rgba(122,144,117,0.4);color:#3a5a35}
-.form-status.error{display:block;background:rgba(180,60,60,0.08);border:1px solid rgba(180,60,60,0.3);color:#7a2020}
-.btn-full:disabled{opacity:0.6;cursor:not-allowed}
 </style>
 </head>
 <body>
 
 <header class="site-header">
   <div class="container"><div class="header-inner">
-    <a href="/" class="header-logo" aria-label="Tether home">
+    <a href="tetheredconsulting_redesign.html" class="header-logo" aria-label="Tether home">
       <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#7A9075"/><circle cx="24" cy="10" r="2.5" fill="#7A9075"/><circle cx="16" cy="23" r="2.5" fill="#7A9075"/></svg>
       <span style="font-family:'Cormorant Garamond',serif;font-weight:400;font-size:20px;letter-spacing:0.06em;color:var(--aubergine);">Tether</span>
     </a>
@@ -224,7 +219,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-he
       <!-- LEFT: FORM -->
       <div class="reveal">
         <div class="form-card">
-          <form id="contact-form" novalidate>
+          <form action="#" method="POST">
             <div class="field">
               <label for="name">Your name</label>
               <input type="text" id="name" name="name" autocomplete="name" required>
@@ -256,9 +251,8 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-he
               <label for="email">Work email</label>
               <input type="email" id="email" name="email" autocomplete="email" required>
             </div>
-            <button type="submit" id="contact-submit" class="btn btn-primary btn-full">Send request</button>
+            <button type="submit" class="btn btn-primary btn-full">Send request</button>
             <p class="form-note">We respond within one business day. No sales pressure.</p>
-            <div id="contact-status" class="form-status" role="alert"></div>
           </form>
         </div>
       </div>
@@ -294,7 +288,7 @@ h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-he
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/></svg></a>
+        <a href="tetheredconsulting_redesign.html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/></svg></a>
         <p>Steady, present support for organizations and the people inside them.</p>
         <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(242,235,221,0.6);margin-top:8px">steady, present, in the moment</p>
       </div>
@@ -312,31 +306,6 @@ t.addEventListener('click',()=>{const o=mn.classList.toggle('open');t.setAttribu
 mn.querySelectorAll('a').forEach(l=>l.addEventListener('click',()=>{mn.classList.remove('open');t.setAttribute('aria-expanded','false');t.querySelectorAll('span').forEach(s=>{s.style.transform='';s.style.opacity='';});}));
 const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const si=[...e.target.parentElement.querySelectorAll('.reveal:not(.visible)')];setTimeout(()=>e.target.classList.add('visible'),Math.min(si.indexOf(e.target)*60,300));obs.unobserve(e.target);}}),{threshold:0.1,rootMargin:'0px 0px -40px 0px'});
 document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-
-const cf=document.getElementById('contact-form');
-const cs=document.getElementById('contact-status');
-const csb=document.getElementById('contact-submit');
-if(cf){cf.addEventListener('submit',async function(e){
-  e.preventDefault();
-  csb.disabled=true;csb.textContent='Sending…';cs.className='form-status';cs.textContent='';
-  const fd=new FormData(cf);
-  const size=fd.get('size')||'';
-  const scenario=fd.get('scenario')||'';
-  const msg=[scenario,size?'Company size: '+size:''].filter(Boolean).join('\n');
-  const body=new FormData();
-  body.append('name',fd.get('name'));
-  body.append('email',fd.get('email'));
-  body.append('company',fd.get('company')||'');
-  body.append('role',fd.get('role')||'');
-  body.append('message',msg);
-  try{
-    const r=await fetch('/api/beta',{method:'POST',body});
-    const d=await r.json();
-    if(r.ok){cs.className='form-status success';cs.textContent='Thanks — we’ll be in touch within one business day.';cf.reset();}
-    else{cs.className='form-status error';cs.textContent=d.error||'Something went wrong. Please try again.';}
-  }catch(err){cs.className='form-status error';cs.textContent='Something went wrong. Please try again.';}
-  finally{csb.disabled=false;csb.textContent='Send request';}
-});}
 window.addEventListener('scroll',()=>{document.querySelector('.site-header').style.boxShadow=window.scrollY>8?'0 2px 24px rgba(46,42,45,0.08)':'none';},{passive:true});
 </script>
 </body>

@@ -137,7 +137,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
               <div className="footer-brand">
                 <Link href="/" aria-label="Tether home">
-                  <LogoMark color="#F2EBDD" />
+                  <div className="footer-logo-box">
+                    <LogoMark color="#7A9075" />
+                  </div>
                 </Link>
                 <p>Steady, present support for organizations and the people inside them.</p>
                 <p className="footer-tagline">steady, present, in the moment</p>

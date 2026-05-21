@@ -74,11 +74,11 @@ body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;color:var(--w
 .text-col{max-width:680px}
 
 /* HEADER */
-.site-header{position:sticky;top:0;z-index:100;background:rgba(242,235,221,0.95);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--hairline);transition:box-shadow 0.2s ease}
+.site-header{position:sticky;top:0;z-index:100;background:#EAE2D2;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--hairline);transition:box-shadow 0.2s ease}
 .header-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
 .header-logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .header-nav{display:flex;align-items:center;gap:8px}
-.nav-link{font-family:'Inter',sans-serif;font-size:14px;font-weight:500;color:var(--warm-ink);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color 0.15s,background 0.15s}
+.nav-link{font-family:'Inter',sans-serif;font-size:16px;font-weight:500;color:var(--warm-ink);text-decoration:none;padding:6px 12px;border-radius:6px;transition:color 0.15s,background 0.15s}
 .nav-link:hover{color:var(--sage);background:rgba(122,144,117,0.08)}
 .mobile-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px}
 .mobile-toggle span{display:block;width:22px;height:1.5px;background:var(--warm-ink);border-radius:2px;transition:transform 0.2s,opacity 0.2s}
@@ -89,7 +89,7 @@ body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;color:var(--w
 @media(max-width:900px){.header-nav{display:none}.mobile-toggle{display:flex}}
 
 /* BUTTONS */
-.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:14px;font-weight:500;padding:10px 22px;border-radius:6px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:16px;font-weight:500;padding:10px 22px;border-radius:6px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:background 0.15s,color 0.15s,border-color 0.15s;white-space:nowrap}
 .btn-primary{background:var(--sage);color:var(--linen);border-color:var(--sage)}
 .btn-primary:hover{background:var(--soft-sage);border-color:var(--soft-sage)}
 .btn-on-sage{background:var(--linen);color:var(--aubergine);border-color:var(--linen)}
@@ -106,17 +106,17 @@ body{font-family:'Inter',sans-serif;font-size:16px;line-height:1.6;color:var(--w
 /* TYPOGRAPHY */
 .eyebrow{font-family:'Inter',sans-serif;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.12em;color:var(--sage)}
 .eyebrow-linen{color:rgba(242,235,221,0.7)}
-h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:64px;line-height:1.1;color:var(--aubergine)}
-h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:40px;line-height:1.2;color:var(--aubergine)}
-h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-height:1.3;color:var(--aubergine)}
+h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:48px;line-height:1.1;color:var(--aubergine)}
+h2{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:32px;line-height:1.2;color:var(--aubergine)}
+h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:24px;line-height:1.3;color:var(--aubergine)}
 .lead{font-family:'Inter',sans-serif;font-size:19px;font-weight:500;line-height:1.5}
 .lead-linen{color:rgba(242,235,221,0.88)}
 .body-text{font-size:16px;line-height:1.6;color:var(--warm-ink)}
 
 @media(max-width:768px){
-  h1{font-size:40px}
-  h2{font-size:30px}
-  h3{font-size:22px}
+  h1{font-size:36px}
+  h2{font-size:26px}
+  h3{font-size:20px}
   .lead{font-size:17px}
 }
 
@@ -162,7 +162,7 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
 .cta-band p{color:rgba(242,235,221,0.75);font-size:17px;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto}
 
 /* FOOTER */
-.site-footer{background:var(--aubergine);padding:80px 0 40px;color:var(--linen)}
+.site-footer{background:var(--sage);padding:80px 0 40px;color:var(--linen)}
 .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:48px;margin-bottom:56px}
 .footer-brand p{font-size:14px;line-height:1.7;color:rgba(242,235,221,0.6);margin-top:16px;max-width:220px}
 .footer-brand svg{margin-bottom:4px}
@@ -218,10 +218,10 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
   <div class="container">
     <div class="reveal"><span class="eyebrow eyebrow-linen">About Tether</span></div>
     <div class="reveal" style="margin-top:20px;max-width:720px">
-      <h1 style="color:var(--linen)">Built by two people who've spent decades sitting with change.</h1>
+      <h1 style="color:var(--linen)">Built by practitioners, not theorists.</h1>
     </div>
-    <div class="reveal" style="margin-top:28px;max-width:580px">
-      <p class="lead lead-linen">Tether was created by a licensed therapist and a psychologist with over 30 years of combined experience. The science underneath it is real.</p>
+    <div class="reveal" style="margin-top:28px;max-width:620px">
+      <p class="lead lead-linen">Tether was designed by a licensed therapist and a psychologist with over 50 years of combined experience of guiding people through change. Tether is the intersection of deep behavioral science and hard-won knowledge of what people actually need when the ground shifts beneath them.</p>
     </div>
   </div>
 </section>
@@ -229,6 +229,7 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
 <!-- FOUNDERS -->
 <section class="section-linen">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The Founders</p>
     <div class="reveal">
       <h2>The people behind Tether.</h2>
     </div>
@@ -237,19 +238,19 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
       <div class="founder-card reveal">
         <span class="eyebrow">Co-founder &amp; Clinical Advisor</span>
         <h3>Joree Rose, MA, LMFT</h3>
-        <p>Joree Rose is a licensed marriage and family therapist, mindfulness and meditation teacher, author, and retreat leader. She has spent over a decade helping people navigate transitions — personal, relational, and professional — with greater awareness and less suffering.</p>
-        <p>At Tether, Joree designed the emotional framework that shapes how the AI coach responds to employees in distress, uncertainty, and transition. Her clinical training informs the boundaries that keep Tether safe, and her coaching experience informs the tone that keeps it useful.</p>
-        <p>She is the author of <em>A Year of Gratitude</em>, <em>Squirmy Learns to be Mindful</em>, and <em>Mindfulness, It's Elementary</em>, and host of the <em>Journey Forward</em> podcast.</p>
-        <div class="credentials">MA, LMFT (California) &nbsp;·&nbsp; Mindfulness Teacher &nbsp;·&nbsp; Author &nbsp;·&nbsp; Retreat Leader</div>
+        <p>Joree Rose is a licensed marriage and family therapist, mindfulness and meditation teacher, and retreat leader with over a decade of experience helping people navigate transition — personal, relational, and professional. She has developed mindfulness curriculum taught across settings ranging from classrooms to boardrooms, and has delivered corporate mindfulness training to companies including Safeway, Pandora, and many small organizations — translating contemplative practice into tools that work under real pressure.</p>
+        <p>At Tether, Joree designed the emotional framework that shapes how the AI coach responds to employees in distress, uncertainty, and transition. Her clinical training informs the boundaries that keep Tether safe. Her years working directly with individuals and organizations inform the tone that keeps it useful.</p>
+        <p>Joree hosted the podcast <em>Journey Forward with Joree Rose</em> for over 6 years and has been featured in Oprahmag.com, NBCnews.com, Business Insider, KTLA News, and more.</p>
+        <div class="credentials">MA, LMFT (California) &nbsp;·&nbsp; Mindfulness Teacher &nbsp;·&nbsp; Retreat Leader</div>
       </div>
       <!-- John -->
       <div class="founder-card reveal">
         <span class="eyebrow">Co-founder &amp; Coaching Architect</span>
         <h3>Dr. John Schinnerer, Ph.D.</h3>
         <p>Dr. John Schinnerer is a psychologist, executive coach, speaker, and author with a Ph.D. from UC Berkeley. He has coached leaders at companies including Meta, Twilio, Okta, Airbnb, and Stanford University, and has trained over 20,000 students in emotional intelligence and resilience.</p>
-        <p>At Tether, John designed the coaching logic — the ADKAR-aligned, CBT-informed framework that determines how the AI coach walks employees through each stage of change. His experience as an executive coach shapes Tether's direct, practical tone: warm but not soft, science-backed but not clinical.</p>
-        <p>He was a consultant on Pixar's <em>Inside Out</em> and has been featured in <em>U.S. News &amp; World Report</em>, <em>Reader's Digest</em>, and <em>Fatherly</em>.</p>
-        <div class="credentials">Ph.D. Educational Psychology, UC Berkeley &nbsp;·&nbsp; Executive Coach &nbsp;·&nbsp; Speaker &nbsp;·&nbsp; Author</div>
+        <p>At Tether, John designed the coaching logic — a stage-based, CBT-informed framework that determines how the AI coach guides employees through each stage of change. His background as an executive coach grounds Tether in what actually moves people forward, not just what sounds good in theory.</p>
+        <p>He was a consultant on Pixar's <em>Inside Out</em> and has been featured in <em>U.S. News &amp; World Report</em>, <em>Reader's Digest</em>, <em>Fatherly</em> and more.</p>
+        <div class="credentials">Ph.D., UC Berkeley &nbsp;·&nbsp; Executive Coach &nbsp;·&nbsp; Speaker &nbsp;·&nbsp; Author</div>
       </div>
     </div>
   </div>
@@ -258,13 +259,14 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
 <!-- PHILOSOPHY -->
 <section class="section-linen-tint">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The Why</p>
     <div class="reveal">
       <h2>Why Tether exists.</h2>
     </div>
     <div class="philosophy-text">
-      <p class="reveal">Most organizational change fails — not because leaders chose the wrong strategy, but because they underinvested in the human side of change. The research is consistent: 70% of change initiatives fall short of their goals, and the gap almost always lives in individual adoption.</p>
-      <p class="reveal">We built Tether because we kept seeing the same pattern in our work with organizations: the framework was solid, the communications were clear, the training was adequate — and people were still stuck. Anxious. Resistant. Not because they were obstinate, but because no one had helped them move through their own internal journey.</p>
-      <p class="reveal">Tether is our attempt to fix that at scale. To give every employee — not just the ones who seek out coaching or flag themselves to HR — access to practical, in-the-moment support when they're navigating change.</p>
+      <p class="reveal">Most organizational change fails — not because leaders chose the wrong strategy, but because they underinvested in the human side of it. The research is consistent: 70% of change initiatives fall short of their goals, and the gap almost always lives in individual adoption.</p>
+      <p class="reveal">We built Tether because we kept seeing the same pattern. The framework was solid. The communications were clear. The training was adequate. And people were still stuck — anxious, resistant, and disengaged. Not because they were obstinate, but because no one had helped them move through their own internal experience of the change.</p>
+      <p class="reveal">Tether exists to fix that at scale. To give every employee — not just those who seek out coaching or flag themselves to HR — access to practical, in-the-moment support exactly when they need it.</p>
     </div>
   </div>
 </section>
@@ -272,21 +274,22 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
 <!-- METHODOLOGY -->
 <section class="section-linen">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The Science</p>
     <div class="reveal">
       <h2>The framework underneath Tether.</h2>
     </div>
     <div class="method-grid">
       <div class="method-card reveal">
         <span class="eyebrow">ADKAR-Aligned</span>
-        <p>Tether's coaching logic maps directly to the Prosci ADKAR model — the most widely used change management framework in the world. Each conversation is designed to understand where an employee is in the ADKAR journey and provide the support that stage actually requires.</p>
+        <p>Tether's coaching logic maps directly to the Prosci ADKAR model — the most widely used change management framework in the world — and extends beyond it. Every conversation is designed to identify where an employee is in their journey and deliver the support that stage actually requires.</p>
       </div>
       <div class="method-card reveal">
         <span class="eyebrow">Evidence-Based</span>
-        <p>Tether draws on CBT, ACT, motivational interviewing, and positive psychology. These aren't wellness buzzwords — they're the methodologies that have been validated in organizational and clinical settings for decades.</p>
+        <p>Tether draws on CBT, ACT, motivational interviewing, and positive psychology. Not wellness buzzwords — methodologies validated in organizational and clinical settings over decades of research and practice.</p>
       </div>
       <div class="method-card reveal">
         <span class="eyebrow">Boundary-Clear</span>
-        <p>Tether is a coaching and development tool, not a clinical service. It knows its limits. When an employee's situation requires more than coaching, Tether redirects them — to their EAP, to HR, or to emergency services if needed.</p>
+        <p>Tether is a coaching and development tool, not a clinical service. It knows its limits. When an employee's situation requires more than coaching can offer, Tether redirects them — to their EAP, to HR, or to emergency services if needed.</p>
       </div>
     </div>
   </div>
@@ -312,7 +315,11 @@ h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:28px;line-he
   <div class="container">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="tetheredconsulting_redesign.html"><svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/><circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/></svg></a>
+        <a href="tetheredconsulting_redesign.html">
+          <div style="background: var(--linen); border-radius: 8px; padding: 8px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/><circle cx="8" cy="10" r="2.5" fill="#7A9075"/><circle cx="24" cy="10" r="2.5" fill="#7A9075"/><circle cx="16" cy="23" r="2.5" fill="#7A9075"/></svg>
+          </div>
+        </a>
         <p>Steady, present support for organizations and the people inside them.</p>
         <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(242,235,221,0.6);margin-top:8px">steady, present, in the moment</p>
       </div>

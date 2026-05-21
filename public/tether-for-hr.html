@@ -88,21 +88,21 @@
   /* ── Typography ── */
   h1 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 64px;
+    font-size: 48px;
     line-height: 1.1;
     font-weight: 300;
     color: var(--aubergine);
   }
   h2 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.2;
     font-weight: 300;
     color: var(--aubergine);
   }
   h3 {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 1.3;
     font-weight: 400;
     color: var(--aubergine);
@@ -127,7 +127,7 @@
   .btn {
     display: inline-block;
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     text-decoration: none;
     border-radius: 8px;
@@ -193,7 +193,7 @@
     position: sticky;
     top: 0;
     z-index: 100;
-    background: rgba(242,235,221,0.96);
+    background: #EAE2D2;
     backdrop-filter: blur(8px);
     border-bottom: 1px solid var(--hairline);
     transition: box-shadow 0.2s ease;
@@ -219,7 +219,7 @@
   }
   .nav-link {
     font-family: 'Inter', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--warm-ink);
     text-decoration: none;
@@ -315,13 +315,12 @@
     margin-top: 40px;
   }
   .before-col {
-    background: rgba(46,42,45,0.04);
-    border: 1px solid rgba(46,42,45,0.1);
+    background: var(--sage);
     border-radius: 12px;
     padding: 32px;
   }
   .after-col {
-    background: var(--soft-sage);
+    background: var(--sage);
     border-radius: 12px;
     padding: 32px;
   }
@@ -333,7 +332,7 @@
     letter-spacing: 0.12em;
     margin-bottom: 20px;
   }
-  .before-col .col-label { color: var(--muted); }
+  .before-col .col-label { color: rgba(242,235,221,0.7); }
   .after-col .col-label { color: rgba(242,235,221,0.7); }
   .before-col ul, .after-col ul { list-style: none; }
   .before-col li, .after-col li {
@@ -341,18 +340,33 @@
     font-size: 15px;
     line-height: 1.5;
     padding: 10px 0;
-    border-bottom: 1px solid rgba(46,42,45,0.08);
+    border-bottom: 1px solid rgba(242,235,221,0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
   }
   .before-col li:last-child, .after-col li:last-child { border-bottom: none; }
-  .before-col li { color: var(--warm-ink); }
-  .after-col li { color: rgba(242,235,221,0.92); border-color: rgba(242,235,221,0.2); }
+  .before-col li { color: rgba(242,235,221,0.92); }
+  .after-col li { color: rgba(242,235,221,0.92); }
   .before-col li::before {
-    content: '—  ';
-    color: var(--muted);
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(242,235,221,0.6);
+    margin-top: 7px;
+    flex-shrink: 0;
   }
   .after-col li::before {
-    content: '→  ';
-    color: rgba(242,235,221,0.6);
+    content: '';
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(242,235,221,0.6);
+    margin-top: 7px;
+    flex-shrink: 0;
   }
 
   /* ── Dashboard cards ── */
@@ -410,7 +424,7 @@
 
   /* ── Footer ── */
   .site-footer {
-    background: var(--aubergine);
+    background: var(--sage);
     padding: 72px 0 40px;
   }
   .footer-top {
@@ -476,9 +490,9 @@
   /* ── Responsive ── */
   @media (max-width: 900px) {
     .container { padding: 0 24px; }
-    h1 { font-size: 40px; }
-    h2 { font-size: 30px; }
-    h3 { font-size: 22px; }
+    h1 { font-size: 36px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 20px; }
     .hero { padding: 72px 0 64px; }
     .section-linen, .section-linen-tint, .section-sage, .section-aubergine { padding: 64px 0; }
     .grid-3 { grid-template-columns: 1fr; gap: 16px; margin-top: 32px; }
@@ -560,10 +574,11 @@
 <section class="section-linen">
   <div class="container">
     <div class="prose">
+      <p class="eyebrow reveal" style="margin-bottom: 16px;">The Signal</p>
       <h2 class="reveal">Most organizations are flying blind through change.</h2>
       <div style="height:32px"></div>
-      <p class="reveal">Change programs generate a lot of activity — town halls, communications, training sessions. What they rarely generate is signal: honest, real-time data on how change is actually landing with individual employees.</p>
-      <p class="reveal">By the time you have evidence that adoption is stalling — attrition upticks, engagement score drops, a manager flagging a team — the window to intervene has usually passed. Tether changes the data you have access to. Not by surveying employees about their experience (they've stopped responding to those). But by being the coaching tool employees actually use — and returning the aggregate patterns to you in real time.</p>
+      <p class="reveal">Town halls happen. Communications go out. Training gets scheduled. What rarely comes back is honest, real-time data on how change is actually landing with the people going through it.</p>
+      <p class="reveal">By the time the evidence surfaces — an attrition uptick, a dropped engagement score, a manager flagging a struggling team — the window to intervene has passed. Tether changes what you have access to. Not through another survey employees have stopped answering, but by being the coaching resource they actually use — and returning the aggregate patterns to HR in real time.</p>
     </div>
   </div>
 </section>
@@ -571,22 +586,23 @@
 <!-- ── Dashboard features ── -->
 <section class="section-linen-tint">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The View</p>
     <h2 class="reveal">What HR and L&amp;D leaders see.</h2>
     <div class="grid-3">
       <div class="dashboard-card reveal">
-        <p class="eyebrow">ADKAR stage distribution</p>
-        <h3>Where your people are in the change journey.</h3>
-        <p>At any moment, see where your employees are across the seven change stages — how many are still in Awareness, how many have reached Ability, where the largest concentrations of stuck employees are.</p>
+        <p class="eyebrow">Change stage distribution</p>
+        <h3>Where your people are stalling.</h3>
+        <p>At any moment, see how your employees are distributed across the change journey — which stages have the largest concentrations of stuck people, and where momentum is actually building.</p>
       </div>
       <div class="dashboard-card reveal">
         <p class="eyebrow">Emotional tone by team</p>
-        <h3>Where anxiety is highest — and lowest.</h3>
-        <p>Anonymized sentiment patterns across departments or business units. Not individual transcripts — aggregate signals that tell you where anxiety is highest and where it's lowest.</p>
+        <h3>Where the pressure is landing.</h3>
+        <p>Anonymized sentiment patterns across departments and business units. Not individual transcripts — aggregate signals that tell you where the emotional weight of this change is landing hardest, and where it isn't.</p>
       </div>
       <div class="dashboard-card reveal">
         <p class="eyebrow">Engagement &amp; usage patterns</p>
-        <h3>Early signals before they become incidents.</h3>
-        <p>Who is using Tether (at the cohort level), how often, and at what points in the change journey. Declining usage is an early signal worth paying attention to.</p>
+        <h3>The signal most leaders miss.</h3>
+        <p>See who is using Tether at the cohort level, how often, and at what points in the change journey. When usage drops, something is happening. You'll know before it shows up somewhere worse.</p>
       </div>
     </div>
   </div>
@@ -604,8 +620,9 @@
 <!-- ── Before / After ── -->
 <section class="section-linen">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The Shift</p>
     <h2 class="reveal">From guessing to knowing.</h2>
-    <p class="reveal" style="margin-top:20px;max-width:640px;font-size:17px;color:var(--muted);">The intelligence Tether returns doesn't just describe what's happening. It points to what to do next.</p>
+    <p class="reveal" style="margin-top:20px;max-width:640px;font-size:17px;color:var(--muted);">The data Tether returns doesn't just describe what's happening — it tells you where to act.</p>
     <div class="before-after">
       <div class="before-col reveal">
         <p class="col-label">Before Tether</p>
@@ -619,10 +636,10 @@
       <div class="after-col reveal">
         <p class="col-label">With Tether</p>
         <ul>
-          <li>Real-time ADKAR stage data across the organization</li>
+          <li>Real-time stage data across the organization</li>
           <li>Employees supported before they disengage</li>
           <li>Early warning signals weeks before they become HR incidents</li>
-          <li>Content and communications informed by what employees are actually asking</li>
+          <li>Communications built around what employees are actually asking</li>
         </ul>
       </div>
     </div>
@@ -633,10 +650,11 @@
 <section class="section-linen-tint">
   <div class="container">
     <div class="prose">
+      <p class="eyebrow reveal" style="margin-bottom: 16px;">The Boundary</p>
       <h2 class="reveal">What you see — and what you don't.</h2>
       <div style="height:32px"></div>
-      <p class="reveal">This distinction matters. Tether's value to HR depends entirely on employees trusting the tool enough to use it honestly. That trust requires a clear, unambiguous boundary: individual conversations are private. HR sees aggregate data only. Never individual transcripts, never session-level attribution, never a way to identify which employee said what.</p>
-      <p class="reveal">This isn't just good ethics — it's good design. A coaching tool employees trust produces more honest signal than one they approach with suspicion. The anonymization isn't a limitation. It's what makes the data meaningful.</p>
+      <p class="reveal">Tether's value to HR depends entirely on employees trusting the tool enough to use it honestly. That requires one unambiguous line: individual conversations are private. HR sees aggregate data only — never individual transcripts, never session-level attribution, never a way to trace what was said back to who said it.</p>
+      <p class="reveal">This isn't just good ethics. It's good design. A tool employees trust produces more honest signal than one they approach with suspicion. The anonymization isn't a limitation — it's what makes the data meaningful.</p>
       <a href="tether-privacy-trust.html" class="privacy-link reveal">Read our Privacy &amp; Trust statement →</a>
     </div>
   </div>
@@ -645,27 +663,28 @@
 <!-- ── Deployment ── -->
 <section class="section-linen">
   <div class="container">
+    <p class="eyebrow reveal" style="margin-bottom: 16px;">The Setup</p>
     <h2 class="reveal">Deploying Tether in your organization.</h2>
     <div style="margin-top:48px;max-width:720px;">
       <div class="deploy-point reveal">
         <div class="deploy-num">1</div>
         <div>
-          <h3>Setup takes days, not months.</h3>
-          <p>Tether deploys via a secure employee access link. No enterprise SSO required (though it's supported). No IT project.</p>
+          <h3>Days, not months.</h3>
+          <p>Tether deploys via a secure employee access link. No enterprise SSO required, though it's supported. No IT project.</p>
         </div>
       </div>
       <div class="deploy-point reveal">
         <div class="deploy-num">2</div>
         <div>
-          <h3>Employees access Tether directly.</h3>
-          <p>No manager intermediary, no referral required. The tool is designed to be used proactively, not reactively.</p>
+          <h3>No intermediary.</h3>
+          <p>Employees access Tether directly — no manager referral, no intake process. The tool is designed to be used before someone flags a problem, not after.</p>
         </div>
       </div>
       <div class="deploy-point reveal">
         <div class="deploy-num">3</div>
         <div>
-          <h3>Reporting is available from day one.</h3>
-          <p>Your HR dashboard populates as employees use the tool. Early adopters provide early signal.</p>
+          <h3>Signal from day one.</h3>
+          <p>Your HR dashboard populates as employees engage. Early adopters provide early signal — you're not waiting for critical mass to see what's happening.</p>
         </div>
       </div>
     </div>
@@ -691,13 +710,15 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="tetheredconsulting_redesign.html">
-          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-            <line x1="8" y1="10" x2="24" y2="10" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="16" y1="10" x2="16" y2="23" stroke="#F2EBDD" stroke-width="1.5" stroke-linecap="round"/>
-            <circle cx="8" cy="10" r="2.5" fill="#F2EBDD"/>
-            <circle cx="24" cy="10" r="2.5" fill="#F2EBDD"/>
-            <circle cx="16" cy="23" r="2.5" fill="#F2EBDD"/>
-          </svg>
+          <div style="background: var(--linen); border-radius: 8px; padding: 8px; display: inline-flex; align-items: center; justify-content: center; margin-bottom: 16px;">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/>
+              <line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" stroke-width="1.5" stroke-linecap="round"/>
+              <circle cx="8" cy="10" r="2.5" fill="#7A9075"/>
+              <circle cx="24" cy="10" r="2.5" fill="#7A9075"/>
+              <circle cx="16" cy="23" r="2.5" fill="#7A9075"/>
+            </svg>
+          </div>
         </a>
         <p>Steady, present support for organizations and the people inside them.</p>
         <p style="font-family:'Cormorant Garamond',serif;font-style:italic;font-size:14px;color:rgba(242,235,221,0.6);">steady, present, in the moment</p>

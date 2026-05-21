@@ -88,120 +88,105 @@ export default function HomePage() {
           HERO
       ══════════════════════════════════════════ */}
       <section className="hero" aria-labelledby="hero-heading">
-        {/* Background mark */}
-        <svg
-          className="hero-bg-mark"
-          width="320"
-          height="320"
-          viewBox="0 0 320 320"
-          fill="none"
-          aria-hidden="true"
-        >
-          <line x1="80" y1="100" x2="240" y2="100" stroke="#F2EBDD" strokeWidth="12" strokeLinecap="round" />
-          <line x1="160" y1="100" x2="160" y2="230" stroke="#F2EBDD" strokeWidth="12" strokeLinecap="round" />
-          <circle cx="80" cy="100" r="22" fill="#F2EBDD" />
-          <circle cx="240" cy="100" r="22" fill="#F2EBDD" />
-          <circle cx="160" cy="230" r="22" fill="#F2EBDD" />
-        </svg>
-
         <div className="container">
-          <div className="hero-inner">
-            <p className="eyebrow eyebrow-linen hero-eyebrow">AI coaching for organizational change</p>
-            <h1 id="hero-heading" className="h1 h1-linen">
-              Change is hard.<br />Tether helps people<br />move through it.
-            </h1>
-            <p className="lead lead-linen hero-lead">
-              An in-the-moment coaching tool for the reorg, the new manager, the system rollout —
-              whatever is making work feel unstable right now.
-            </p>
-            <div className="hero-actions">
-              <Link href="/tether-contact.html" className="btn btn-on-sage">Request a demo</Link>
-              <Link href="/tether-how-it-works.html" className="btn btn-on-aubergine">See how it works</Link>
+          <div className="hero-layout">
+            <div className="hero-content-col">
+              <p className="eyebrow eyebrow-linen hero-eyebrow">AI coaching for organizational change</p>
+              <h1 id="hero-heading" className="h1 h1-linen">
+                Change is hard.<br />Tether walks people<br />through it.
+              </h1>
+              <p className="lead lead-linen hero-lead">
+                An in-the-moment AI coach for managers and employees navigating reorgs, new systems, AI shifts, or any stretch of work that feels unstable. Steady support, the moment it&apos;s needed.
+              </p>
+              <div className="hero-actions">
+                <Link href="/tether-contact.html" className="btn btn-on-sage">Request a demo</Link>
+                <Link href="/tether-how-it-works.html" className="btn btn-on-aubergine">See how it works</Link>
+              </div>
+            </div>
+            <div className="hero-logo-col">
+              <div className="hero-logo-box">
+                <svg width="120" height="120" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <line x1="8" y1="10" x2="24" y2="10" stroke="#7A9075" strokeWidth="1.5" strokeLinecap="round" />
+                  <line x1="16" y1="10" x2="16" y2="23" stroke="#7A9075" strokeWidth="1.5" strokeLinecap="round" />
+                  <circle cx="8" cy="10" r="2.5" fill="#7A9075" />
+                  <circle cx="24" cy="10" r="2.5" fill="#7A9075" />
+                  <circle cx="16" cy="23" r="2.5" fill="#7A9075" />
+                </svg>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* ══════════════════════════════════════════
-          THE GAP
+          THE PROBLEM
       ══════════════════════════════════════════ */}
-      <section className="section section-linen" aria-labelledby="gap-heading">
+      <section className="section section-linen" aria-labelledby="problem-heading">
         <div className="container">
-          <div className="gap-grid">
-            <div>
-              <p className="eyebrow reveal">The problem</p>
-              <h2
-                id="gap-heading"
-                className="h2 reveal"
-                style={{ margin: '16px 0 24px' }}
-              >
-                Most change programs miss the person.
-              </h2>
-              <p className="lead reveal" style={{ marginBottom: '20px' }}>
-                Organizations spend millions on change management frameworks — and almost nothing
-                on the human experience of being changed.
-              </p>
-              <p className="reveal" style={{ color: 'var(--muted)', marginBottom: '20px' }}>
-                EAPs are reactive. Someone has to be struggling before they get referred.
-                Meditation apps are generic. They can&apos;t help an employee figure out how to
-                talk to a new manager after a reorg.
-              </p>
-              <p className="reveal" style={{ color: 'var(--muted)' }}>
-                Tether fills that gap. It meets employees in the moment — when the announcement
-                drops, when the team changes, when the uncertainty sets in — and walks them
-                through it with practical, scenario-specific coaching grounded in ADKAR, CBT,
-                and motivational interviewing.
+          <p className="eyebrow reveal" style={{ marginBottom: '16px' }}>The problem</p>
+          <h2 id="problem-heading" className="h2 reveal" style={{ marginBottom: '64px', maxWidth: '640px' }}>
+            Most change programs miss the person.
+          </h2>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '48px', maxWidth: '760px' }}>
+
+            <div className="reveal">
+              <p className="eyebrow" style={{ marginBottom: '12px' }}>The core problem Tether solves</p>
+              <p style={{ fontSize: '16px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Organizations invest heavily in change strategy, communication plans, and rollout
+                logistics — and almost nothing on the individual experience of being changed.
+                Employees are left to navigate confusion, anxiety, and resistance on their own.
+                Tether addresses the human gap that every change initiative leaves behind.
               </p>
             </div>
 
-            <div className="gap-visual reveal">
-              <svg
-                className="gap-diagram"
-                viewBox="0 0 380 340"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                aria-label="Diagram showing Tether bridging the gap between organizational change and the individual"
-              >
-                <rect width="380" height="340" rx="16" fill="rgba(143,166,137,0.1)" />
-
-                <rect x="24" y="40" width="120" height="36" rx="8" fill="#7A9075" opacity="0.3" />
-                <text x="84" y="63" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="500" fill="#2E2A2D" textAnchor="middle" letterSpacing="0.05em">ORGANIZATION</text>
-
-                <rect x="34" y="96" width="100" height="28" rx="6" fill="rgba(143,166,137,0.25)" />
-                <text x="84" y="114" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Change strategy</text>
-
-                <rect x="34" y="134" width="100" height="28" rx="6" fill="rgba(143,166,137,0.25)" />
-                <text x="84" y="152" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Town halls</text>
-
-                <rect x="34" y="172" width="100" height="28" rx="6" fill="rgba(143,166,137,0.25)" />
-                <text x="84" y="190" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Change playbooks</text>
-
-                <rect x="34" y="210" width="100" height="28" rx="6" fill="rgba(143,166,137,0.25)" />
-                <text x="84" y="228" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">EAP (reactive)</text>
-
-                <rect x="155" y="88" width="70" height="180" rx="8" fill="rgba(61,45,58,0.06)" />
-                <text x="190" y="178" fontFamily="Cormorant Garamond,Georgia,serif" fontSize="13" fontStyle="italic" fill="#3D2D3A" textAnchor="middle">the</text>
-                <text x="190" y="196" fontFamily="Cormorant Garamond,Georgia,serif" fontSize="13" fontStyle="italic" fill="#3D2D3A" textAnchor="middle">gap</text>
-
-                <rect x="236" y="40" width="120" height="36" rx="8" fill="#3D2D3A" opacity="0.15" />
-                <text x="296" y="63" fontFamily="Inter,sans-serif" fontSize="11" fontWeight="500" fill="#2E2A2D" textAnchor="middle" letterSpacing="0.05em">THE PERSON</text>
-
-                <rect x="246" y="96" width="100" height="28" rx="6" fill="rgba(46,42,45,0.08)" />
-                <text x="296" y="114" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Confusion</text>
-
-                <rect x="246" y="134" width="100" height="28" rx="6" fill="rgba(46,42,45,0.08)" />
-                <text x="296" y="152" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Anxiety</text>
-
-                <rect x="246" y="172" width="100" height="28" rx="6" fill="rgba(46,42,45,0.08)" />
-                <text x="296" y="190" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Resistance</text>
-
-                <rect x="246" y="210" width="100" height="28" rx="6" fill="rgba(46,42,45,0.08)" />
-                <text x="296" y="228" fontFamily="Inter,sans-serif" fontSize="10" fill="#2E2A2D" textAnchor="middle">Quiet leaving</text>
-
-                <rect x="24" y="272" width="332" height="44" rx="10" fill="#7A9075" />
-                <text x="190" y="299" fontFamily="Inter,sans-serif" fontSize="12" fontWeight="500" fill="#F2EBDD" textAnchor="middle" letterSpacing="0.06em">TETHER BRIDGES THIS GAP</text>
-              </svg>
+            <div className="reveal">
+              <p className="eyebrow" style={{ marginBottom: '12px' }}>Current corporate solutions</p>
+              <p style={{ fontSize: '16px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Most organizations rely on town halls, manager briefings, EAPs (reactive by design),
+                and generic wellness apps. None of these were built for the specific, in-the-moment
+                experience of navigating organizational change. Employees know the difference —
+                and so does the data on failed adoption.
+              </p>
             </div>
+
+            <div className="reveal">
+              <p className="eyebrow" style={{ marginBottom: '12px' }}>How do companies know what works?</p>
+              <p style={{ fontSize: '16px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Typically: they don&apos;t. Adoption is assumed rather than measured. Engagement
+                surveys arrive months too late. Managers report what they observe, which is usually
+                incomplete. Tether gives HR and L&D anonymized, aggregate intelligence on where
+                employees are in the change journey — and where they&apos;re getting stuck —
+                in real time.
+              </p>
+            </div>
+
+            <div className="reveal">
+              <p className="eyebrow" style={{ marginBottom: '12px' }}>What&apos;s the ROI on change management?</p>
+              <p style={{ fontSize: '16px', color: 'var(--muted)', lineHeight: '1.7' }}>
+                Organizations with structured change management support are six times more likely
+                to meet project objectives. Poor adoption costs an estimated 33% of first-year
+                productivity per employee. The return on helping people through change isn&apos;t
+                a soft metric — it shows up in retention, adoption speed, and team performance.
+              </p>
+            </div>
+
+          </div>
+
+          <div
+            className="reveal"
+            style={{
+              marginTop: '64px',
+              paddingTop: '40px',
+              borderTop: '1px solid var(--hairline)',
+            }}
+          >
+            <p
+              className="h2"
+              style={{ color: 'var(--aubergine)', maxWidth: '680px', fontStyle: 'italic' }}
+            >
+              Tether bridges the gap between organizational intent and individual experience.
+            </p>
           </div>
         </div>
       </section>
@@ -217,37 +202,36 @@ export default function HomePage() {
           <div className="section-header">
             <p className="eyebrow reveal">How people move through change</p>
             <h2 id="stages-heading" className="h2 reveal" style={{ margin: '16px 0 20px' }}>
-              Seven stages. Every person travels them alone.
+              Most people deal with change on their own. Tether walks alongside them.
             </h2>
             <p className="reveal" style={{ color: 'var(--muted)' }}>
-              Tether meets employees at whichever stage they&apos;re in right now — and gives
-              them the specific support that stage actually requires.
+              Tether meets employees where they are and gives them specific tools to navigate
+              where they are feeling stuck.
             </p>
           </div>
 
           <div className="stages-grid">
             {[
-              { n: '01', title: 'Awareness', desc: 'The change has been announced. The person is processing what it means for them — not for the org chart.' },
-              { n: '02', title: 'Desire', desc: 'Understanding why the change matters personally — and finding a reason to move toward it rather than away from it.' },
-              { n: '03', title: 'Knowledge', desc: 'What does this change actually require of me? What skills, tools, and new behaviors does it call for?' },
-              { n: '04', title: 'Ability', desc: 'Knowing what to do is not the same as being able to do it. This is where most change programs quietly fall apart.' },
-              { n: '05', title: 'Reinforcement', desc: 'New behaviors need anchoring. Without it, people drift back. Tether provides the consistent support that makes change stick.' },
-              { n: '06', title: 'Integration', desc: 'The change becomes part of how the person works — not something imposed on them but something they\'ve made their own.' },
-              { n: '07', title: 'Resilience', desc: 'The capacity to move through the next change with more steadiness. Each change builds the muscle for the one after it.' },
+              { title: 'Awareness', desc: 'The change has been announced. The person is processing what it means for them — not for the org chart.' },
+              { title: 'Desire', desc: 'Understanding why the change matters personally — and finding a reason to move toward it rather than away from it.' },
+              { title: 'Knowledge', desc: 'What does this change actually require of me? What skills, tools, and new behaviors does it call for?' },
+              { title: 'Ability', desc: 'Knowing what to do is not the same as being able to do it. This is where most change programs quietly fall apart.' },
+              { title: 'Reinforcement', desc: 'New behaviors need anchoring. Without it, people drift back. Tether provides the consistent support that makes change stick.' },
+              { title: 'Integration', desc: 'The change becomes part of how the person works — not something imposed on them but something they\'ve made their own.' },
+              { title: 'Resilience', desc: 'The capacity to move through the next change with more steadiness. Each change builds the muscle for the one after it.' },
+              { title: 'Stress Management', desc: 'Navigating the physiological and emotional toll of sustained uncertainty — building capacity to stay regulated when the ground keeps shifting.' },
             ].map((stage) => (
-              <article key={stage.n} className="stage-card reveal">
-                <p className="stage-number">Stage {stage.n}</p>
+              <article key={stage.title} className="stage-card reveal">
                 <h3 className="h3">{stage.title}</h3>
                 <p className="stage-desc">{stage.desc}</p>
               </article>
             ))}
 
-            {/* Tether accent card */}
+            {/* Tether accent card — always last */}
             <article
               className="stage-card reveal"
               style={{ background: 'var(--sage)', borderColor: 'var(--sage)' }}
             >
-              <p className="stage-number" style={{ color: 'rgba(242,235,221,0.6)' }}>Tether</p>
               <h3 className="h3" style={{ color: 'var(--linen)', fontSize: '20px', lineHeight: '1.4' }}>
                 Coaching for every stage, delivered in the moment.
               </h3>
@@ -266,14 +250,14 @@ export default function HomePage() {
       {/* ══════════════════════════════════════════
           INTERLUDE 1
       ══════════════════════════════════════════ */}
-      <div className="interlude" role="complementary" aria-label="Key insight">
+      <div className="interlude" role="complementary" aria-label="Key insight" style={{ background: 'var(--aubergine)' }}>
         <div className="interlude-inner">
           <p className="pull-quote pull-quote-linen reveal">
             &ldquo;Adoption happens inside individuals. Tether makes the invisible journey visible.&rdquo;
           </p>
           <Link
             href="/tether-how-it-works.html"
-            className="btn btn-on-sage reveal"
+            className="btn btn-on-aubergine reveal"
             style={{ marginTop: '32px' }}
           >
             See the full methodology
@@ -427,8 +411,8 @@ export default function HomePage() {
                   'Another change management framework to implement',
                 ].map((item) => (
                   <li key={item}>
-                    <span className="isnot-bullet bullet-muted" aria-hidden="true" />
-                    <span style={{ color: 'var(--muted)' }}>{item}</span>
+                    <span className="isnot-bullet bullet-sage" aria-hidden="true" />
+                    <span>{item}</span>
                   </li>
                 ))}
               </ul>
@@ -463,19 +447,19 @@ export default function HomePage() {
             <div>
               <p className="eyebrow reveal" style={{ marginBottom: '16px' }}>About Tether</p>
               <h2 id="about-brief-heading" className="h2 reveal" style={{ marginBottom: '24px' }}>
-                Built by psychologists who&apos;ve sat with change for decades.
+                Built by psychologists who have supported people through change for decades.
               </h2>
               <p className="reveal" style={{ color: 'var(--muted)', marginBottom: '20px', lineHeight: '1.7' }}>
-                Tether was created by Joree Rose, LMFT, and Dr. John Schinnerer — a licensed
-                marriage and family therapist and a psychologist with over 30 years of combined
-                experience helping people navigate transitions, build emotional resilience, and
-                lead through uncertainty.
+                Tether was created by Joree Rose, LMFT, and Dr. John Schinnerer, Ph.D. — a
+                licensed marriage and family therapist and a psychologist with over 50 combined
+                years of experience helping individuals and organizations navigate transitions,
+                build resilience, and lead through uncertainty.
               </p>
               <p className="reveal" style={{ color: 'var(--muted)', marginBottom: '32px', lineHeight: '1.7' }}>
-                The evidence base they drew on — ADKAR, CBT, ACT, Polyvagal theory, motivational
-                interviewing — is the same body of work that underpins Tether&apos;s coaching
-                logic. This isn&apos;t a tech company that added a wellness layer. It&apos;s the
-                other way around.
+                The frameworks they drew on — ADKAR, CBT, ACT, Polyvagal theory, motivational
+                interviewing, positive psychology — are the same evidence base that underpins
+                Tether&apos;s coaching logic. Tether is a wellness company that uses technology,
+                not a tech company that added a wellness layer.
               </p>
               <Link href="/tether-about.html" className="btn btn-secondary reveal">
                 About the founders
@@ -517,11 +501,12 @@ export default function HomePage() {
           <div className="cta-band-inner">
             <p className="eyebrow">Ready when you are</p>
             <h2 id="cta-heading" className="h2">
-              See how Tether could land in your organization.
+              See how Tether can benefit your organization.
             </h2>
             <p>
-              A 30-minute conversation. We&apos;ll listen more than we talk. If it&apos;s not
-              the right fit, we&apos;ll say so.
+              Schedule a 30-minute consultation. We&apos;ll walk you through how Tether works,
+              what your employees would experience, and what HR and L&amp;D would see on the
+              back end. No pressure. If it&apos;s not the right fit, we&apos;ll say so.
             </p>
             <div className="cta-actions">
               <Link href="/tether-contact.html" className="btn btn-on-sage reveal">
